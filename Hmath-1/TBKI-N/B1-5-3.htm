@@ -1,0 +1,1988 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./B1-5-3.files/filelist.xml">
+<link rel=Edit-Time-Data href="./B1-5-3.files/editdata.mso">
+<link rel=OLE-Object-Data href="./B1-5-3.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>          ~ 5-3 最高公因式(H</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>張素真</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>SHU</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>26</o:TotalTime>
+  <o:LastPrinted>2000-03-01T13:48:00Z</o:LastPrinted>
+  <o:Created>2005-10-16T13:16:00Z</o:Created>
+  <o:LastSaved>2005-10-16T13:16:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>808</o:Words>
+  <o:Characters>4607</o:Characters>
+  <o:Lines>38</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>5657</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:新細明體;
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-alt:PMingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:標楷體;
+	panose-1:3 0 5 9 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:script;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@標楷體";
+	panose-1:3 0 5 9 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:script;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:新細明體;
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:18.0pt 90.0pt 72.0pt 27.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:541601988;
+	mso-list-type:simple;
+	mso-list-template-ids:44968372;}
+@list l0:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:18.75pt;
+	mso-level-number-position:left;
+	margin-left:18.75pt;
+	text-indent:-18.75pt;}
+@list l1
+	{mso-list-id:1051997984;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1801058476;}
+@list l1:level1
+	{mso-level-start-at:2;
+	mso-level-number-format:bullet;
+	mso-level-text:◎;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:標楷體;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2
+	{mso-list-id:1220900632;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-990080200;}
+@list l2:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:37.5pt;
+	mso-level-number-position:left;
+	margin-left:37.5pt;
+	text-indent:-19.5pt;}
+@list l3
+	{mso-list-id:1263219008;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2058828842;}
+@list l3:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:66.0pt;
+	mso-level-number-position:left;
+	margin-left:66.0pt;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:1333794246;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-858499070;}
+@list l4:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:66.0pt;
+	mso-level-number-position:left;
+	margin-left:66.0pt;
+	text-indent:-18.0pt;}
+@list l5
+	{mso-list-id:1385444876;
+	mso-list-type:hybrid;
+	mso-list-template-ids:363886730;}
+@list l5:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:66.0pt;
+	mso-level-number-position:left;
+	margin-left:66.0pt;
+	text-indent:-18.0pt;}
+@list l6
+	{mso-list-id:1393117303;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2020289636;}
+@list l6:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:66.0pt;
+	mso-level-number-position:left;
+	margin-left:66.0pt;
+	text-indent:-18.0pt;}
+@list l7
+	{mso-list-id:1428888472;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-650116970;}
+@list l7:level1
+	{mso-level-number-format:taiwanese-counting-thousand;
+	mso-level-tab-stop:45.0pt;
+	mso-level-number-position:left;
+	margin-left:45.0pt;
+	text-indent:-21.0pt;}
+@list l7:level2
+	{mso-level-text:"\(%2\)";
+	mso-level-tab-stop:66.0pt;
+	mso-level-number-position:left;
+	margin-left:66.0pt;
+	text-indent:-18.0pt;}
+@list l8
+	{mso-list-id:1946646499;
+	mso-list-type:hybrid;
+	mso-list-template-ids:199377726;}
+@list l8:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l9
+	{mso-list-id:2047872655;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1769219936;}
+@list l9:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-TW style='tab-interval:24.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">&nbsp;</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><span style="mso-spacerun:
+yes">&nbsp;</span></span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>5-3 </span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>最高公因式</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>(H.C.F)</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>與最低公倍式</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>(L.C.M)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:標楷體'>[1] </span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>最高公因式</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>(HCF)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:94.0pt;text-indent:-70.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>(1)</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>定義</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>: </span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>設</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>d(x)</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>是</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:標楷體'>f(x)</span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>與</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>g(x)</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>公因式中</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>, </span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>次數最高者</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>, </span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>則稱</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>d(x)</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>是</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:標楷體'>f(x)</span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>、</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>g(x)</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的最高公因式</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>, </span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>以</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:標楷體'>HCF[f(x).g(x)]=d(x)</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>表示。</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>(2)</span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>如果多項式</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>f(x)</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>、</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>g(x)</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>除常數外</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>, </span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>沒有其他因式就稱他們互質。</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>[</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>例</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>]: </span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>設</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:標楷體'>f(x)=(x-1)(x+2)<sup>2</sup> (x-3) ,
+g(x)=(x+1)(x+2)(x-3)<sup>3</sup><span style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;</span><sub><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:11.25pt;
+ height:9.75pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image001.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1191002798">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp;&nbsp;</span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>公因式</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>: (x+2),(x-3),(x+2)(x-3)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:28.0pt;tab-stops:list 36.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'><span style="mso-spacerun: yes">&nbsp;</span><sub><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:11.25pt;height:9.75pt' o:ole="" o:bullet="t">
+ <v:imagedata src="./B1-5-3.files/image002.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1191002799">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>&nbsp; </span>HCF=(X+2)(X-3)<span
+style="mso-spacerun: yes">&nbsp; </span>LCM=(x-1)(x+1)(x+2)<sup>2</sup>(x-3)<sup>3<o:p></o:p></sup></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:14.0pt;tab-stops:list 36.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'><span style="mso-spacerun: yes">&nbsp;</span>[</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>例</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>] f(x)=(x-1)=6(<sub><v:shape id="_x0000_i1033" type="#_x0000_t75" style='width:18.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image003.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1191002800">
+ </o:OLEObject>
+</xml><![endif]-->)g(x)=(2x+3)=6(<sub><v:shape id="_x0000_i1034" type="#_x0000_t75"
+ style='width:24pt;height:18pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image004.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1191002801">
+ </o:OLEObject>
+</xml><![endif]-->)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:list 36.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'><span style="mso-spacerun: yes">&nbsp;&nbsp; </span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;</span>HCF=1(=6) </span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>互質</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:9.0pt;text-indent:8.8pt;mso-char-indent-count:
+.63;mso-char-indent-size:13.95pt;tab-stops:36.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>(3)</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>性質</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:28.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>1.</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>若</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:標楷體'>HCF [f(x)</span><span style='font-size:
+14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>、</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>g(x)]=d(x)
+</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>則</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>d(x)| f(x), d(x) |g(x)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:27.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>2.</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>若</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:標楷體'> k(x)| f(x), k(x) |g(x)<span
+style="mso-spacerun: yes">&nbsp; </span></span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>則</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>
+k(x)| a(x)f(x)<sub><v:shape id="_x0000_i1035" type="#_x0000_t75" style='width:11.25pt;
+ height:12pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image005.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1191002802">
+ </o:OLEObject>
+</xml><![endif]-->b(x)g(x) [</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>消</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>首去尾法</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-indent:-14.0pt;mso-char-indent-count:
+-1.0;mso-char-indent-size:14.0pt'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>[2] </span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>輾轉相除法</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體'>[HCF</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>方法</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:標楷體'>] </span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp; </span></span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>設</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'>f(x) , g(x) </span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>≠</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>0</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>多項式</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+color:black'> , </span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>恰有二多項式</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.17gd'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+color:black'>Q(x) , r(x) . </span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>使</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'>f(x)=g(x)Q(x)+r(x) , </span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>其中</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+color:black'>r(x)=0 , </span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>或</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'>degr(x)&lt; degg(x)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'><span
+style="mso-spacerun: yes">&nbsp; </span>, </span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>則</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>HCF[f(x)
+, g(x)]=HCF[g(x) , r(x)] .<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'>[</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>例</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>] f(x)=x<sub><v:shape id="_x0000_i1036" type="#_x0000_t75" style='width:6.75pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image006.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1191002803">
+ </o:OLEObject>
+</xml><![endif]-->-2x<sub><v:shape id="_x0000_i1037" type="#_x0000_t75"
+ style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image007.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1191002804">
+ </o:OLEObject>
+</xml><![endif]-->-2x<sub><v:shape id="_x0000_i1038" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image008.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1191002805">
+ </o:OLEObject>
+</xml><![endif]-->–3x-2<span style="mso-spacerun: yes">&nbsp; </span>g(x)=x<sub><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image009.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1191002807">
+ </o:OLEObject>
+</xml><![endif]-->–2x<sub><v:shape id="_x0000_i1040" type="#_x0000_t75"
+ style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image010.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1191002808">
+ </o:OLEObject>
+</xml><![endif]-->–2x-1 <o:p></o:p></span></p>
+
+<p class=MsoNormal><v:line id="_x0000_s1037" style='position:absolute;
+ z-index:11' from="3in,9pt" to="3in,171pt" o:allowincell="f"/><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>求</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'> HCF=?<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:170.25pt'><v:line id="_x0000_s1029"
+ style='position:absolute;z-index:3' from="2in,0" to="2in,126pt" o:allowincell="f"/><v:line
+ id="_x0000_s1027" style='position:absolute;z-index:1' from="45pt,0" to="45pt,126pt"
+ o:allowincell="f"/><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>1+2 <span
+style="mso-spacerun: yes">&nbsp;</span>1+0-2-2-3-2<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1-2+0-2-1<span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span>1-2 <sub><v:shape id="_x0000_i1041"
+ type="#_x0000_t75" style='width:9pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image011.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1191002809">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1-2+0-2-1<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1+0+1+0<o:p></o:p></span></p>
+
+<p class=MsoNormal><v:line id="_x0000_s1028" style='position:absolute;
+ z-index:2' from="45pt,0" to="3in,0" o:allowincell="f"/><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;</span>2-2+0-2-2<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-2-1-2-1<span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>2-4+0-4-2<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-2+0-2+0<o:p></o:p></span></p>
+
+<p class=MsoNormal><v:line id="_x0000_s1036" style='position:absolute;
+ z-index:10' from="2in,0" to="3in,0" o:allowincell="f"/><v:line id="_x0000_s1031"
+ style='position:absolute;z-index:5' from="63pt,0" to="63pt,18pt"
+ o:allowincell="f"/><v:line id="_x0000_s1030" style='position:absolute;
+ z-index:4' from="45pt,0" to="2in,0" o:allowincell="f"/><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>2<span
+style="mso-spacerun: yes">&nbsp; </span>2+0+2+0<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-1+0-1<o:p></o:p></span></p>
+
+<p class=MsoNormal><v:line id="_x0000_s1032" style='position:absolute;
+ z-index:6' from="63pt,0" to="135pt,0" o:allowincell="f"/><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>-1<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1+0+1+0<o:p></o:p></span></p>
+
+<p class=MsoNormal><v:line id="_x0000_s1033" style='position:absolute;
+ z-index:7' from="45pt,9pt" to="45pt,45pt" o:allowincell="f"/><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1+0+1<o:p></o:p></span></p>
+
+<p class=MsoNormal><v:line id="_x0000_s1035" style='position:absolute;
+ z-index:9' from="45pt,0" to="2in,0" o:allowincell="f"/><v:line id="_x0000_s1034"
+ style='position:absolute;z-index:8' from="2in,0" to="2in,27pt" o:allowincell="f"/><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'>[</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>例</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>]f(x)=x<sub><v:shape id="_x0000_i1042" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1191002810">
+ </o:OLEObject>
+</xml><![endif]-->+(k-6)+(2k-1) , g(x)=x<sub><v:shape id="_x0000_i1043" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1191002811">
+ </o:OLEObject>
+</xml><![endif]-->+(k+2)x+2k ,</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>HCF</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>為一次式</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>, </span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>求</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>k=?<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp; </span>sol: </span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>設</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>HCF</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>一次式</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'> d(x)<span style="mso-spacerun: yes">&nbsp; </span>d(x)| f(x)<span
+style="mso-spacerun: yes">&nbsp; </span>d(x) | g(x)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:list 36.0pt'><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><sub><v:shape id="_x0000_i1044" type="#_x0000_t75"
+ style='width:11.25pt;height:9.75pt' o:ole="" o:bullet="t">
+ <v:imagedata src="./B1-5-3.files/image001.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1191002812">
+ </o:OLEObject>
+</xml><![endif]-->d(x)| f(x)-g(x)<span style="mso-spacerun: yes">&nbsp;
+</span>d(x) |-8x-1<span style="mso-spacerun: yes">&nbsp; </span>d(x) | -(8x+1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:24.0pt;tab-stops:list 36.0pt'><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;</span></span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>取</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'> d(x)=8x+1<span
+style="mso-spacerun: yes">&nbsp; </span></span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>令</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>8x+1=0<span style="mso-spacerun:
+yes">&nbsp; </span>x=<sub><v:shape id="_x0000_i1045" type="#_x0000_t75"
+ style='width:12.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image014.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1191002813">
+ </o:OLEObject>
+</xml><![endif]--> </span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>代</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'> g(x)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:24.0pt;tab-stops:list 36.0pt'><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;</span></span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>得</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'> g(<sub><v:shape id="_x0000_i1046"
+ type="#_x0000_t75" style='width:12.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image014.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1046"
+  DrawAspect="Content" ObjectID="_1191002814">
+ </o:OLEObject>
+</xml><![endif]-->)=(<sub><v:shape id="_x0000_i1047" type="#_x0000_t75"
+ style='width:12.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image014.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1191002815">
+ </o:OLEObject>
+</xml><![endif]-->)<sub><v:shape id="_x0000_i1048" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image015.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1191002816">
+ </o:OLEObject>
+</xml><![endif]-->+(k+2)(-<sub><v:shape id="_x0000_i1049" type="#_x0000_t75"
+ style='width:9pt;height:18pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image016.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1191002817">
+ </o:OLEObject>
+</xml><![endif]-->)+2k=0<span style="mso-spacerun: yes">&nbsp; </span>k=<sub><v:shape
+ id="_x0000_i1050" type="#_x0000_t75" style='width:9pt;height:18pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image017.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1191002818">
+ </o:OLEObject>
+</xml><![endif]--> <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>[3]</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>最低公倍式</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+color:black'>[LCM]<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:94.0pt;text-indent:-76.0pt'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'>(1).</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>定義</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>:</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>設</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>m(x)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>為</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>f(x)
+, g(x) </span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>的公倍數中次數最小者</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'>, </span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>則稱</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>m(x)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>是</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>f(x)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>、</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>g(x)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>的最低公倍式</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+color:black'>, </span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>以</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'>LCM[f(x) , g(x)]=m(x)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>表示</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'> <span
+lang=EN-US>.<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='text-indent:17.95pt;mso-char-indent-count:1.28;
+mso-char-indent-size:14.0pt'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>(2).</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>最低公倍式不是唯一的</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+color:black'> , </span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>它們之間可差一個常數倍數</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'> .<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.5gd;text-indent:-42.05pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:14.0pt'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>(3)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>性質</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+color:black'>:</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>設</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'>f(x) , g(x)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>之</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>HCF</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>為</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>d(x)
+, LCM</span></b><b style='mso-bidi-font-weight:normal'><span style='font-size:
+14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>為</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'>m(x) , <o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.5gd;text-indent:-42.05pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:14.0pt'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>則</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:black'>d(x)m(x)=f(x)g(x) , </span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>或</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:black'>m(x)=f(x)g(x)/d(x)
+.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span>[</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>例</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>] f(x)=x<sub><v:shape id="_x0000_i1051"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1051"
+  DrawAspect="Content" ObjectID="_1191002820">
+ </o:OLEObject>
+</xml><![endif]-->+2x-3<span style="mso-spacerun: yes">&nbsp; </span>g(x)=3x<sub><v:shape
+ id="_x0000_i1052" type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image010.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1052"
+  DrawAspect="Content" ObjectID="_1191002821">
+ </o:OLEObject>
+</xml><![endif]-->-2x<sub><v:shape id="_x0000_i1053" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image018.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1053"
+  DrawAspect="Content" ObjectID="_1191002822">
+ </o:OLEObject>
+</xml><![endif]-->-7x-16 </span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>求</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>HCF</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>、</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>LCM<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>LCM=<sub><v:shape
+ id="_x0000_i1054" type="#_x0000_t75" style='width:90.75pt;height:21.75pt'
+ o:ole="">
+ <v:imagedata src="./B1-5-3.files/image019.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1054"
+  DrawAspect="Content" ObjectID="_1191002823">
+ </o:OLEObject>
+</xml><![endif]-->=(x+3)(3x<sub><v:shape id="_x0000_i1055" type="#_x0000_t75"
+ style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image020.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1055"
+  DrawAspect="Content" ObjectID="_1191002824">
+ </o:OLEObject>
+</xml><![endif]-->-2x<sub><v:shape id="_x0000_i1056" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image021.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1056"
+  DrawAspect="Content" ObjectID="_1191002825">
+ </o:OLEObject>
+</xml><![endif]-->-7x+6)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>隨</span><span style='mso-fareast-font-family:
+標楷體'> </span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>堂</span><span style='mso-fareast-font-family:
+標楷體'> </span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>練</span><span style='mso-fareast-font-family:
+標楷體'> </span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>習</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l9 level1 lfo3;
+tab-stops:list 18.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>求</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'> f(x)= x<sub><v:shape id="_x0000_i1057"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image022.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1057"
+  DrawAspect="Content" ObjectID="_1191002826">
+ </o:OLEObject>
+</xml><![endif]-->-5x+4 </span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與</span><span
+style='mso-fareast-font-family:標楷體'> <span lang=EN-US>g(x)=2x<sub><v:shape
+ id="_x0000_i1058" type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1058"
+  DrawAspect="Content" ObjectID="_1191002827">
+ </o:OLEObject>
+</xml><![endif]-->-5x-12 </span></span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的最高公因式與最低公倍式</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;</span>f(x)= x<sub><v:shape id="_x0000_i1059" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image023.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1059"
+  DrawAspect="Content" ObjectID="_1191002828">
+ </o:OLEObject>
+</xml><![endif]-->-5x+4=(x-1)(x-4) <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>g(x)= 2x<sub><v:shape
+ id="_x0000_i1060" type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image023.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1060"
+  DrawAspect="Content" ObjectID="_1191002829">
+ </o:OLEObject>
+</xml><![endif]-->-5x-12=(x-4)(2x+3)<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:list 36.0pt'><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span><sub><v:shape id="_x0000_i1061" type="#_x0000_t75"
+ style='width:11.25pt;height:9.75pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image001.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1061"
+  DrawAspect="Content" ObjectID="_1191002830">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>f(x)
+</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>與</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'> g(x) </span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>最高公因數</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>(x-4)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;tab-stops:list 36.0pt'><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>最低公倍數</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>(x-1)(x-4)(2x+3)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l9 level1 lfo3;
+tab-stops:list 18.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>兩個二次多項式領導係數都是</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>1<sub><v:shape id="_x0000_i1062"
+ type="#_x0000_t75" style='width:6.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image024.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1062"
+  DrawAspect="Content" ObjectID="_1191002831">
+ </o:OLEObject>
+</xml><![endif]--> x+1 </span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>是兩者之一最高公因式</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span>x<sub><v:shape id="_x0000_i1063"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image025.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1063"
+  DrawAspect="Content" ObjectID="_1191002832">
+ </o:OLEObject>
+</xml><![endif]-->-4x<sub><v:shape id="_x0000_i1064" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1064"
+  DrawAspect="Content" ObjectID="_1191002834">
+ </o:OLEObject>
+</xml><![endif]-->+x+6, </span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>是兩者之一最低公倍式</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>, </span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>求這兩個多項式</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>令此二多項式為</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(x+1)f(x) </span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>與</span><span style='mso-fareast-font-family:
+標楷體'> <span lang=EN-US>(x+1)g(x) </span></span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>其中</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'> f(x) </span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>與</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'> g(x) </span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>互質且領導係數</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'> <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>皆為</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>1</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>兩者之</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>1</span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>最低公倍式為</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>(x+1)f(x)g(x)=x<sub><v:shape
+ id="_x0000_i1065" type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image025.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1065"
+  DrawAspect="Content" ObjectID="_1191002835">
+ </o:OLEObject>
+</xml><![endif]-->-4x<sub><v:shape id="_x0000_i1066" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1066"
+  DrawAspect="Content" ObjectID="_1191002836">
+ </o:OLEObject>
+</xml><![endif]-->+x+6=(x+1)(x<sub><v:shape id="_x0000_i1067" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image026.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1067"
+  DrawAspect="Content" ObjectID="_1191002837">
+ </o:OLEObject>
+</xml><![endif]-->–5x-6)=(x+1)(x-2)(x-3)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>f(x)g(x)=(x-2)(x-3) </span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>知</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>f(x)</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>與</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>g(x)</span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>可能為</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>1</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與生俱來</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>x-2)(x-3)</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>或</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>x-2,x-3<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;</span></span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>例題一</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span></span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>求兩多項式</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>f(x)=x<sub><v:shape id="_x0000_i1068"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1068"
+  DrawAspect="Content" ObjectID="_1191002838">
+ </o:OLEObject>
+</xml><![endif]-->+2x-3</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>g(x)=3x<sub><v:shape id="_x0000_i1069"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image010.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1069"
+  DrawAspect="Content" ObjectID="_1191002839">
+ </o:OLEObject>
+</xml><![endif]-->-2x<sub><v:shape id="_x0000_i1070" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image018.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1070"
+  DrawAspect="Content" ObjectID="_1191002840">
+ </o:OLEObject>
+</xml><![endif]-->-7x+6</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的最高公因式與最低公倍</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span></span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>式。</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span></span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>答：</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'> (x-1)(x+3)(3x<sub><v:shape id="_x0000_i1071"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1071"
+  DrawAspect="Content" ObjectID="_1191002841">
+ </o:OLEObject>
+</xml><![endif]-->+x-6)</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>f(x)</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>與</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>g(x)</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>的一個最低公倍式。</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>例題二</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span></span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>兩個多項式的領導係數都是</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>1</span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>x+3</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>是兩者之一最高公因式，</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>x<sub><v:shape id="_x0000_i1072" type="#_x0000_t75" style='width:6.75pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image025.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1072"
+  DrawAspect="Content" ObjectID="_1191002842">
+ </o:OLEObject>
+</xml><![endif]-->-4x<sub><v:shape id="_x0000_i1073" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1073"
+  DrawAspect="Content" ObjectID="_1191002843">
+ </o:OLEObject>
+</xml><![endif]-->-29x-24<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span></span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>是兩者之一最低公倍式，求這兩個多項式。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span></span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>答：</span><span style='mso-fareast-font-family:
+標楷體'> </span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>所求二多項式為</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>x-3</span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>(x+3)(x+1)(x-8)</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，或</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(x+3)(x+1)</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>與</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>(x+3)(x-8)</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>例題三</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-36.0pt'><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>用輾轉相除法求</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>f(x)=2x<sub><v:shape id="_x0000_i1074"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image027.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1074"
+  DrawAspect="Content" ObjectID="_1191002844">
+ </o:OLEObject>
+</xml><![endif]-->-5x<sub><v:shape id="_x0000_i1075" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1075"
+  DrawAspect="Content" ObjectID="_1191002845">
+ </o:OLEObject>
+</xml><![endif]-->+4x+7</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>g(x)=4x<sub><v:shape id="_x0000_i1076"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image028.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1076"
+  DrawAspect="Content" ObjectID="_1191002846">
+ </o:OLEObject>
+</xml><![endif]-->-9x<sub><v:shape id="_x0000_i1077" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image029.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1077"
+  DrawAspect="Content" ObjectID="_1191002848">
+ </o:OLEObject>
+</xml><![endif]-->+19x+21</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的最高</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span></span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>公因式</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span></span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>答：</span><span style='mso-fareast-font-family:
+標楷體'> <span lang=EN-US>x<sub><v:shape id="_x0000_i1078" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1078"
+  DrawAspect="Content" ObjectID="_1191002849">
+ </o:OLEObject>
+</xml><![endif]-->-2x+3</span></span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>是所求的最高公因式之一。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>習題</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-indent:-21.0pt;mso-list:l7 level1 lfo5;
+tab-stops:list 45.0pt'><![if !supportLists]><span lang=EN-US style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>一.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>求下列各組多項式的最高公因式與最低公倍式。</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:66.0pt;text-indent:-18.0pt;mso-list:l7 level2 lfo5;
+tab-stops:list 66.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>f(x)=(2x+1)<sup>2</sup>(x+2)<sup>2</sup>(x-3)<sup>3</sup></span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>g(x)=(2x+1)(x+2)(x-3)<sup>4 </sup></span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:48.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span>A</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>：</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>(2x+1)(x+2)(x-3)<sub><v:shape id="_x0000_i1079"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image030.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1079"
+  DrawAspect="Content" ObjectID="_1191002850">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為一最高公因式</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:48.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>(2x+1)<sub><v:shape id="_x0000_i1080"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image031.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1080"
+  DrawAspect="Content" ObjectID="_1191002851">
+ </o:OLEObject>
+</xml><![endif]-->(x+2)<sub><v:shape id="_x0000_i1081" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image032.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1081"
+  DrawAspect="Content" ObjectID="_1191002852">
+ </o:OLEObject>
+</xml><![endif]-->(x-3)<sub><v:shape id="_x0000_i1082" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image033.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1082"
+  DrawAspect="Content" ObjectID="_1191002853">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為一最低公倍式。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:66.0pt;text-indent:-18.0pt;mso-list:l7 level2 lfo5;
+tab-stops:list 66.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>f(x)=2x<sub><v:shape id="_x0000_i1083"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image025.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1083"
+  DrawAspect="Content" ObjectID="_1191002854">
+ </o:OLEObject>
+</xml><![endif]-->-3x<sub><v:shape id="_x0000_i1084" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1084"
+  DrawAspect="Content" ObjectID="_1191002855">
+ </o:OLEObject>
+</xml><![endif]-->-2x</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>g(x)=2x<sub><v:shape id="_x0000_i1085"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image025.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1085"
+  DrawAspect="Content" ObjectID="_1191002856">
+ </o:OLEObject>
+</xml><![endif]-->-9x<sub><v:shape id="_x0000_i1086" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image034.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1086"
+  DrawAspect="Content" ObjectID="_1191002857">
+ </o:OLEObject>
+</xml><![endif]-->+7x+6</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>　。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>A</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>(x-2)(2x+1)</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>為一最高公因式，</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>x (x-2)(x-3)(2x+1)</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為一最低公倍式。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:24.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-indent:-21.0pt;mso-list:l7 level1 lfo5;
+tab-stops:list 45.0pt'><![if !supportLists]><span lang=EN-US style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>二.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>利用輾轉相除法，求下列各姐多項式的最高公因式。</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:66.0pt;text-indent:-18.0pt;mso-list:l7 level2 lfo5;
+tab-stops:list 66.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>x<sub><v:shape id="_x0000_i1087"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image009.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1087"
+  DrawAspect="Content" ObjectID="_1191002858">
+ </o:OLEObject>
+</xml><![endif]-->+x<sub><v:shape id="_x0000_i1088" type="#_x0000_t75" style='width:6.75pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image010.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1088"
+  DrawAspect="Content" ObjectID="_1191002859">
+ </o:OLEObject>
+</xml><![endif]-->+2x<sub><v:shape id="_x0000_i1089" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image035.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1089"
+  DrawAspect="Content" ObjectID="_1191002860">
+ </o:OLEObject>
+</xml><![endif]-->+x+1</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>x<sub><v:shape id="_x0000_i1090"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image036.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1090"
+  DrawAspect="Content" ObjectID="_1191002862">
+ </o:OLEObject>
+</xml><![endif]-->+2x<sub><v:shape id="_x0000_i1091" type="#_x0000_t75"
+ style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image037.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1091"
+  DrawAspect="Content" ObjectID="_1191002863">
+ </o:OLEObject>
+</xml><![endif]-->+x<sub><v:shape id="_x0000_i1092" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image038.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1092"
+  DrawAspect="Content" ObjectID="_1191002864">
+ </o:OLEObject>
+</xml><![endif]-->-1</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:48.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span>A</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>：</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>x<sub><v:shape id="_x0000_i1093" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1093"
+  DrawAspect="Content" ObjectID="_1191002865">
+ </o:OLEObject>
+</xml><![endif]-->+x+1</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為一最高公因式。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:66.0pt;text-indent:-18.0pt;mso-list:l7 level2 lfo5;
+tab-stops:list 66.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>2x<sub><v:shape id="_x0000_i1094"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image009.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1094"
+  DrawAspect="Content" ObjectID="_1191002866">
+ </o:OLEObject>
+</xml><![endif]-->+3x<sub><v:shape id="_x0000_i1095" type="#_x0000_t75"
+ style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image010.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1095"
+  DrawAspect="Content" ObjectID="_1191002867">
+ </o:OLEObject>
+</xml><![endif]-->-x<sub><v:shape id="_x0000_i1096" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image018.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1096"
+  DrawAspect="Content" ObjectID="_1191002868">
+ </o:OLEObject>
+</xml><![endif]-->-4</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>x<sub><v:shape id="_x0000_i1097"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image033.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1097"
+  DrawAspect="Content" ObjectID="_1191002869">
+ </o:OLEObject>
+</xml><![endif]-->+2x<sub><v:shape id="_x0000_i1098" type="#_x0000_t75"
+ style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1098"
+  DrawAspect="Content" ObjectID="_1191002870">
+ </o:OLEObject>
+</xml><![endif]-->-x<sub><v:shape id="_x0000_i1099" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image040.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1099"
+  DrawAspect="Content" ObjectID="_1191002871">
+ </o:OLEObject>
+</xml><![endif]-->-2</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:27.0pt;tab-stops:27.0pt'><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>x-1</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>為一最高公因式。</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'><sub><v:shape id="_x0000_i1100" type="#_x0000_t75" style='width:9pt;
+ height:17.25pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image011.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1100"
+  DrawAspect="Content" ObjectID="_1191002872">
+ </o:OLEObject>
+</xml><![endif]--> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:48.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>三</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'><span style="mso-spacerun: yes">&nbsp; </span></span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>利用輾轉相除法，說明下列各題中的兩多項式互質。</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:66.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo7;
+tab-stops:list 66.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>f(x)=x<sub><v:shape id="_x0000_i1101"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image041.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1101"
+  DrawAspect="Content" ObjectID="_1191002874">
+ </o:OLEObject>
+</xml><![endif]-->+1</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>g(x)=x<sub><v:shape id="_x0000_i1102"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image042.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1102"
+  DrawAspect="Content" ObjectID="_1191002875">
+ </o:OLEObject>
+</xml><![endif]-->-1</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:48.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span>A</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>：因為最後餘式為非零常數，故</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>f(x)</span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>g(x)</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>互質。</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:66.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo7;
+tab-stops:list 66.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>f(x)=x<sub><v:shape id="_x0000_i1103"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image043.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1103"
+  DrawAspect="Content" ObjectID="_1191002876">
+ </o:OLEObject>
+</xml><![endif]-->+x<sub><v:shape id="_x0000_i1104" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image044.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1104"
+  DrawAspect="Content" ObjectID="_1191002877">
+ </o:OLEObject>
+</xml><![endif]-->+2</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>g(x)=x<sub><v:shape id="_x0000_i1105"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image045.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1105"
+  DrawAspect="Content" ObjectID="_1191002878">
+ </o:OLEObject>
+</xml><![endif]-->+3x<sub><v:shape id="_x0000_i1106" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1106"
+  DrawAspect="Content" ObjectID="_1191002879">
+ </o:OLEObject>
+</xml><![endif]-->-3x+1</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:60.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>A</span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：因為最後餘數為非零常數，故</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>f(x)</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>與</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>g(x)</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>互質。</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun: yes">&nbsp;
+</span><span style="mso-spacerun: yes">&nbsp;&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>四</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'><span style="mso-spacerun: yes">&nbsp; </span></span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>試求下列各題中領導係數為</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>1</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>的兩個多項式。</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:66.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo8;
+tab-stops:list 66.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>x<sub><v:shape id="_x0000_i1107"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image035.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1107"
+  DrawAspect="Content" ObjectID="_1191002880">
+ </o:OLEObject>
+</xml><![endif]-->+x+1</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為兩者之一最高公因式，而且</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>x<sub><v:shape id="_x0000_i1108"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image046.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1108"
+  DrawAspect="Content" ObjectID="_1191002881">
+ </o:OLEObject>
+</xml><![endif]-->+4x<sub><v:shape id="_x0000_i1109" type="#_x0000_t75"
+ style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image047.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1109"
+  DrawAspect="Content" ObjectID="_1191002882">
+ </o:OLEObject>
+</xml><![endif]-->+6x<sub><v:shape id="_x0000_i1110" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image048.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1110"
+  DrawAspect="Content" ObjectID="_1191002883">
+ </o:OLEObject>
+</xml><![endif]-->+5x+2</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為兩者之一最低公倍式。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:120.0pt;text-indent:-120.0pt'><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>：二多項式為</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>x<sub><v:shape id="_x0000_i1111" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1111"
+  DrawAspect="Content" ObjectID="_1191002884">
+ </o:OLEObject>
+</xml><![endif]-->+x+1</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>(x+1)(x+2)(x<sub><v:shape id="_x0000_i1112"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image049.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1112"
+  DrawAspect="Content" ObjectID="_1191002886">
+ </o:OLEObject>
+</xml><![endif]-->+x+1)</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，或</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>(x+1)(x<sub><v:shape id="_x0000_i1113"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image032.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1113"
+  DrawAspect="Content" ObjectID="_1191002887">
+ </o:OLEObject>
+</xml><![endif]-->+x+1)</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與</span><span
+style='mso-fareast-font-family:標楷體'> <span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;</span>(x+2)(x<sub><v:shape id="_x0000_i1114"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image050.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1114"
+  DrawAspect="Content" ObjectID="_1191002888">
+ </o:OLEObject>
+</xml><![endif]-->+x+1)</span></span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:120.0pt;text-indent:-120.0pt'><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:66.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo8;
+tab-stops:list 66.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>兩者之和為</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>2x<sub><v:shape id="_x0000_i1115" type="#_x0000_t75" style='width:6.75pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image025.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1115"
+  DrawAspect="Content" ObjectID="_1191002889">
+ </o:OLEObject>
+</xml><![endif]-->+x<sub><v:shape id="_x0000_i1116" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1116"
+  DrawAspect="Content" ObjectID="_1191002890">
+ </o:OLEObject>
+</xml><![endif]-->+x-1</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，而且</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>x<sub><v:shape id="_x0000_i1117"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image051.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1117"
+  DrawAspect="Content" ObjectID="_1191002891">
+ </o:OLEObject>
+</xml><![endif]-->-6x<sub><v:shape id="_x0000_i1118" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image029.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1118"
+  DrawAspect="Content" ObjectID="_1191002892">
+ </o:OLEObject>
+</xml><![endif]-->-7x-6</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為兩者之一最低公倍式。</span><span
+style='mso-fareast-font-family:標楷體'> <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:48.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span>A</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：此二多項式為</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>(x<sub><v:shape id="_x0000_i1119"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1119"
+  DrawAspect="Content" ObjectID="_1191002893">
+ </o:OLEObject>
+</xml><![endif]-->+x+1)(x-3)</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>(x<sub><v:shape id="_x0000_i1120"
+ type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1120"
+  DrawAspect="Content" ObjectID="_1191002894">
+ </o:OLEObject>
+</xml><![endif]-->+x+1)(x+2)</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:48.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>五</span><span style='mso-fareast-font-family:標楷體'> </span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>設</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>d(x)</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>為</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>x<sub><v:shape id="_x0000_i1121" type="#_x0000_t75"
+ style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image025.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1121"
+  DrawAspect="Content" ObjectID="_1191002895">
+ </o:OLEObject>
+</xml><![endif]-->-2x<sub><v:shape id="_x0000_i1122" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1122"
+  DrawAspect="Content" ObjectID="_1191002896">
+ </o:OLEObject>
+</xml><![endif]-->-5x+6</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>x<sub><v:shape id="_x0000_i1123"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image028.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1123"
+  DrawAspect="Content" ObjectID="_1191002897">
+ </o:OLEObject>
+</xml><![endif]-->+k<sub><v:shape id="_x0000_i1124" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1124"
+  DrawAspect="Content" ObjectID="_1191002898">
+ </o:OLEObject>
+</xml><![endif]-->x<sub><v:shape id="_x0000_i1125" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image034.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1125"
+  DrawAspect="Content" ObjectID="_1191002900">
+ </o:OLEObject>
+</xml><![endif]-->+2kx-16</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>之一最高公因式，其中</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>k</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為一實數。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:66.0pt;text-indent:-18.0pt;mso-list:l6 level1 lfo9;
+tab-stops:list 66.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>若</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>d(x)</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>為一次式，求</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>k</span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>之值。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:48.0pt'><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><span style="mso-spacerun:
+yes">&nbsp;</span><span style="mso-spacerun: yes">&nbsp; </span>A</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>：</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>k=-2 </span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>或</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'> k=-5</span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:66.0pt;text-indent:-18.0pt;mso-list:l6 level1 lfo9;
+tab-stops:list 66.0pt'><![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>若</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>d(x)</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>為二次式，求</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>k</span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>之值。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>：</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>k=3</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>。</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>六</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'><span style="mso-spacerun: yes">&nbsp; </span></span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>求兩多項式</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>f(x)=x<sub><v:shape id="_x0000_i1126" type="#_x0000_t75" style='width:8.25pt;
+ height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image052.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1126"
+  DrawAspect="Content" ObjectID="_1191002901">
+ </o:OLEObject>
+</xml><![endif]-->-4x<sub><v:shape id="_x0000_i1127" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image053.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1127"
+  DrawAspect="Content" ObjectID="_1191002902">
+ </o:OLEObject>
+</xml><![endif]-->-8x-16</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>與</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>g(x)=x<sub><v:shape id="_x0000_i1128"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image054.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1128"
+  DrawAspect="Content" ObjectID="_1191002903">
+ </o:OLEObject>
+</xml><![endif]-->+2x<sub><v:shape id="_x0000_i1129" type="#_x0000_t75"
+ style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image055.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1129"
+  DrawAspect="Content" ObjectID="_1191002904">
+ </o:OLEObject>
+</xml><![endif]-->+4x+8</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的最高公因式，並把這最高公因式表成</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>m(x)f(x)+n(x)g(x)</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的形式，其中</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>m(x)</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>n(x)</span><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>皆為有理係數多項式。</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-fareast-font-family:標楷體'><span
+style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>：最高公因式為</span><span lang=EN-US style='mso-fareast-font-family:
+標楷體'>4x+8</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，</span><span lang=EN-US
+style='mso-fareast-font-family:標楷體'>m(x)=<sub><v:shape id="_x0000_i1130"
+ type="#_x0000_t75" style='width:12pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image056.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1130"
+  DrawAspect="Content" ObjectID="_1191002905">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><span
+lang=EN-US style='mso-fareast-font-family:標楷體'>n(x)=-<sub><v:shape id="_x0000_i1131"
+ type="#_x0000_t75" style='width:18pt;height:33pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image057.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1131"
+  DrawAspect="Content" ObjectID="_1191002906">
+ </o:OLEObject>
+</xml><![endif]-->+<sub><v:shape id="_x0000_i1132" type="#_x0000_t75" style='width:12pt;
+ height:30.75pt' o:ole="">
+ <v:imagedata src="./B1-5-3.files/image058.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1132"
+  DrawAspect="Content" ObjectID="_1191002907">
+ </o:OLEObject>
+</xml><![endif]-->+1</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span><span
+style='mso-fareast-font-family:標楷體'> <span lang=EN-US><o:p></o:p></span></span></p>
+
+</div>
+
+</body>
+
+</html>

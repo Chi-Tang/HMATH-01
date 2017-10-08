@@ -1,0 +1,1783 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./B3-1-4.files/filelist.xml">
+<link rel=Edit-Time-Data href="./B3-1-4.files/editdata.mso">
+<link rel=OLE-Object-Data href="./B3-1-4.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>｛4-4｝向量的內積</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>黃智斌</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>SHU</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>103</o:TotalTime>
+  <o:LastPrinted>2002-07-03T01:44:00Z</o:LastPrinted>
+  <o:Created>2005-10-29T10:56:00Z</o:Created>
+  <o:LastSaved>2005-10-29T10:56:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>548</o:Words>
+  <o:Characters>3128</o:Characters>
+  <o:Lines>26</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3841</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:新細明體;
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-alt:PMingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:全真勘亭流;
+	mso-font-alt:新細明體;
+	mso-font-charset:136;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134742016 16 0 1048576 0;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:華康新儷粗黑;
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:136;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1 134742016 16 0 1048576 0;}
+@font-face
+	{font-family:"Rockwell Extra Bold";
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"\@全真勘亭流";
+	mso-font-charset:136;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134742016 16 0 1048576 0;}
+@font-face
+	{font-family:"\@華康新儷粗黑";
+	mso-font-charset:136;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1 134742016 16 0 1048576 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:新細明體;
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:9.0pt 109.3pt 72.0pt 27.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:543444347;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1799192132;}
+@list l0:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:629019474;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2141853114 69488252 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:24.0pt;
+	mso-level-number-position:left;
+	margin-left:24.0pt;
+	text-indent:-24.0pt;}
+@list l2
+	{mso-list-id:949773519;
+	mso-list-type:simple;
+	mso-list-template-ids:1417062086;}
+@list l2:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:◎;
+	mso-level-tab-stop:14.25pt;
+	mso-level-number-position:left;
+	margin-left:14.25pt;
+	text-indent:-14.25pt;
+	font-family:新細明體;
+	mso-hansi-font-family:"Times New Roman";}
+@list l3
+	{mso-list-id:1009940689;
+	mso-list-type:simple;
+	mso-list-template-ids:-2117330924;}
+@list l3:level1
+	{mso-level-tab-stop:10.5pt;
+	mso-level-number-position:left;
+	margin-left:10.5pt;
+	text-indent:-10.5pt;}
+@list l4
+	{mso-list-id:1260915110;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2072704866;}
+@list l4:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l5
+	{mso-list-id:1499806012;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1925395422;}
+@list l5:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l6
+	{mso-list-id:1660186348;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1048972348;}
+@list l6:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l7
+	{mso-list-id:2142072758;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1376143122;}
+@list l7:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:165.75pt;
+	mso-level-number-position:left;
+	margin-left:165.75pt;
+	text-indent:-18.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:全真勘亭流;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-TW style='tab-interval:24.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal><span style='font-size:24.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>§<span lang=EN-US>1</span></span><span
+lang=EN-US style='font-size:24.0pt;mso-bidi-font-size:10.0pt'>-4 </span><span
+style='font-size:24.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>坐標</span><span style='font-size:24.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流'>向量的內積<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:華康新儷粗黑;color:purple'>[甲]向量的內積和夾角</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'>(1)</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>內積定義</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'>:</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'>
+設<sub><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+ o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:9.75pt;
+ height:12.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image001.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1192117397">
+ </o:OLEObject>
+</xml><![endif]-->和<sub><v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:11.25pt;
+ height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image002.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1192117398">
+ </o:OLEObject>
+</xml><![endif]-->的夾角為<sub><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:9.75pt;height:14.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image003.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1192117399">
+ </o:OLEObject>
+</xml><![endif]-->,已定義<sub><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:9.75pt;height:12.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image004.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1192117400">
+ </o:OLEObject>
+</xml><![endif]-->和<sub><v:shape id="_x0000_i1029" type="#_x0000_t75" style='width:11.25pt;
+ height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image005.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1192117401">
+ </o:OLEObject>
+</xml><![endif]-->的內積<sub><v:shape id="_x0000_i1030" type="#_x0000_t75"
+ style='width:86.25pt;height:21.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image006.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1192117402">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:14.0pt;mso-char-indent-count:1.0;
+mso-char-indent-size:14.0pt'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-hansi-font-family:"Rockwell Extra Bold"'>若<span
+lang=EN-US><sub><v:shape id="_x0000_i1031" type="#_x0000_t75" style='width:57.75pt;
+ height:17.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image007.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1192117403">
+ </o:OLEObject>
+</xml><![endif]-->,<sub><v:shape id="_x0000_i1032" type="#_x0000_t75" style='width:56.25pt;
+ height:18pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image008.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1192117404">
+ </o:OLEObject>
+</xml><![endif]--></span></span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流'>則<span lang=EN-US><sub><v:shape id="_x0000_i1033"
+ type="#_x0000_t75" style='width:9.75pt;height:12.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image004.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1192117405">
+ </o:OLEObject>
+</xml><![endif]-->和<sub><v:shape id="_x0000_i1034" type="#_x0000_t75" style='width:11.25pt;
+ height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image005.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1192117406">
+ </o:OLEObject>
+</xml><![endif]-->的內積<sub><v:shape id="_x0000_i1035" type="#_x0000_t75"
+ style='width:86.25pt;height:21.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image006.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1192117407">
+ </o:OLEObject>
+</xml><![endif]--><sub><v:shape id="_x0000_i1036" type="#_x0000_t75" style='width:63.75pt;
+ height:17.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image009.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1192117408">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>證明</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>: ( Another By </span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流'><sub><v:shape id="_x0000_i1037"
+ type="#_x0000_t75" style='width:135.75pt;height:24.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image010.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1192117410">
+ </o:OLEObject>
+</xml><![endif]-->)</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><v:shapetype id="_x0000_t202"
+ coordsize="21600,21600" o:spt="202" path="m0,0l0,21600,21600,21600,21600,0xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1042" type="#_x0000_t202" style='position:absolute;
+ left:0;text-align:left;margin-left:90pt;margin-top:9pt;width:188.85pt;
+ height:90pt;z-index:1;mso-position-horizontal:absolute;
+ mso-position-vertical:absolute' strokecolor="white">
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal><span lang=EN-US><v:shape id="_x0000_i1124" type="#_x0000_t75"
+     style='width:192pt;height:101.25pt' o:ole="">
+     <v:imagedata src="./B3-1-4.files/image011.wmz" o:title=""/>
+    </v:shape><!--[if gte mso 9]><o:OLEObject Type="Embed"
+     ProgID="Word.Picture.8" ShapeID="_x0000_i1124" DrawAspect="Content"
+     ObjectID="_1192117411">
+    </o:OLEObject>
+   <![endif]--></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><span lang=EN-US><span style="mso-spacerun: yes">&nbsp; </span><span
+style="mso-spacerun: yes">&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;</span></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'>1.</span></b><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流'>設<span lang=EN-US><sub><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" style='width:86.25pt;height:20.25pt'
+ o:ole="">
+ <v:imagedata src="./B3-1-4.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1192117412">
+ </o:OLEObject>
+</xml><![endif]--><b style='mso-bidi-font-weight:normal'><sub><v:shape id="_x0000_i1040"
+ type="#_x0000_t75" style='width:6.75pt;height:15pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image013.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1192117413">
+ </o:OLEObject>
+</xml><![endif]--> <sub><v:shape id="_x0000_i1041" type="#_x0000_t75" style='width:84.75pt;
+ height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image014.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1192117414">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp;</span></b></span></span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'>2.</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>∵</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流'><sub><v:shape id="_x0000_i1042"
+ type="#_x0000_t75" style='width:92.25pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image015.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1192117415">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:22.35pt;tab-stops:list 36.0pt'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'><sub><v:shape
+ id="_x0000_i1043" type="#_x0000_t75" style='width:41.25pt;height:20.25pt'
+ o:ole="" o:bullet="t">
+ <v:imagedata src="./B3-1-4.files/image016.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1192117416">
+ </o:OLEObject>
+</xml><![endif]--></span></b><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>-</span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流'><sub><v:shape id="_x0000_i1044"
+ type="#_x0000_t75" style='width:27.75pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image017.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1192117417">
+ </o:OLEObject>
+</xml><![endif]--></span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>-</span></b><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'><sub><v:shape
+ id="_x0000_i1045" type="#_x0000_t75" style='width:18.75pt;height:17.25pt'
+ o:ole="">
+ <v:imagedata src="./B3-1-4.files/image018.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1192117418">
+ </o:OLEObject>
+</xml><![endif]--><sub><v:shape id="_x0000_i1046" type="#_x0000_t75" style='width:33.75pt;
+ height:21.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image019.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1046"
+  DrawAspect="Content" ObjectID="_1192117419">
+ </o:OLEObject>
+</xml><![endif]--><sub><v:shape id="_x0000_i1047" type="#_x0000_t75" style='width:117.75pt;
+ height:21.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image020.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1192117420">
+ </o:OLEObject>
+</xml><![endif]--></span></b><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>3.</span></b><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'>在△<span
+lang=EN-US>OAB中(餘弦定理)</span></span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 36.0pt'><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span><sub><v:shape id="_x0000_i1048"
+ type="#_x0000_t75" style='width:201.75pt;height:21.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image021.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1192117421">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 36.0pt'><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'>(2)
+</span></b><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+全真勘亭流;mso-ascii-font-family:"Times New Roman"'>向量的夾角及長度</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'>(</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>絕對值</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'>)</span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 36.0pt'><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>若</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1049"
+ type="#_x0000_t75" style='width:171.75pt;height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image022.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1192117422">
+ </o:OLEObject>
+</xml><![endif]--></span></b><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>且</span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1050"
+ type="#_x0000_t75" style='width:9.75pt;height:14.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image003.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1192117423">
+ </o:OLEObject>
+</xml><![endif]--></span></b><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>為</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1051" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image023.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1051"
+  DrawAspect="Content" ObjectID="_1192117424">
+ </o:OLEObject>
+</xml><![endif]-->,<sub><v:shape id="_x0000_i1052" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image024.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1052"
+  DrawAspect="Content" ObjectID="_1192117425">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>的夾角</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>,</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>則</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 36.0pt'><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span><b style='mso-bidi-font-weight:normal'><span
+style="mso-spacerun: yes">&nbsp;</span></b></span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+全真勘亭流;mso-ascii-font-family:"Times New Roman"'>◎</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1053" type="#_x0000_t75"
+ style='width:209.25pt;height:39.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image025.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1053"
+  DrawAspect="Content" ObjectID="_1192117426">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 36.0pt'><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span></b><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><span style="mso-spacerun: yes">&nbsp;</span>1. </span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>當</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1054" type="#_x0000_t75"
+ style='width:9.75pt;height:12.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image026.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1054"
+  DrawAspect="Content" ObjectID="_1192117427">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>⊥</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1055" type="#_x0000_t75" style='width:11.25pt;
+ height:15.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image027.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1055"
+  DrawAspect="Content" ObjectID="_1192117428">
+ </o:OLEObject>
+</xml><![endif]-->(</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>垂直</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>)<sub><v:shape id="_x0000_i1056" type="#_x0000_t75" style='width:17.25pt;
+ height:12pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image028.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1056"
+  DrawAspect="Content" ObjectID="_1192117429">
+ </o:OLEObject>
+</xml><![endif]--><sub><v:shape id="_x0000_i1057" type="#_x0000_t75" style='width:51.75pt;
+ height:21.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image029.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1057"
+  DrawAspect="Content" ObjectID="_1192117430">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-justify:
+inter-ideograph'><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'>2. </span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>當</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1058" type="#_x0000_t75" style='width:27.75pt;
+ height:15.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image030.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1058"
+  DrawAspect="Content" ObjectID="_1192117431">
+ </o:OLEObject>
+</xml><![endif]-->(</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>平行</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>) <sub><v:shape id="_x0000_i1059" type="#_x0000_t75" style='width:17.25pt;
+ height:12pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image028.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1059"
+  DrawAspect="Content" ObjectID="_1192117432">
+ </o:OLEObject>
+</xml><![endif]--><sub><v:shape id="_x0000_i1060" type="#_x0000_t75" style='width:60.75pt;
+ height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image031.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1060"
+  DrawAspect="Content" ObjectID="_1192117433">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:-1.08gd;text-align:justify;text-justify:
+inter-ideograph;text-indent:-12.9pt;mso-char-indent-count:-.92;mso-char-indent-size:
+14.0pt'><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+全真勘亭流;mso-ascii-font-family:"Times New Roman"'>〔隨堂練習</span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'>14</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>〕</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'>(P.190)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>設</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1061" type="#_x0000_t75"
+ style='width:96pt;height:18.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image032.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1061"
+  DrawAspect="Content" ObjectID="_1192117434">
+ </o:OLEObject>
+</xml><![endif]-->,</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>試問</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流;mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'>1)<sub><v:shape id="_x0000_i1062"
+ type="#_x0000_t75" style='width:14.25pt;height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image033.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1062"
+  DrawAspect="Content" ObjectID="_1192117435">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>和</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1063" type="#_x0000_t75" style='width:14.25pt;
+ height:21.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image034.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1063"
+  DrawAspect="Content" ObjectID="_1192117436">
+ </o:OLEObject>
+</xml><![endif]-->,(2) <sub><v:shape id="_x0000_i1064" type="#_x0000_t75"
+ style='width:9.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image023.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1064"
+  DrawAspect="Content" ObjectID="_1192117437">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>˙</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1065" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image024.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1065"
+  DrawAspect="Content" ObjectID="_1192117438">
+ </o:OLEObject>
+</xml><![endif]-->(3)<sub><v:shape id="_x0000_i1066" type="#_x0000_t75"
+ style='width:9.75pt;height:12.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image035.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1066"
+  DrawAspect="Content" ObjectID="_1192117439">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>和</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1067" type="#_x0000_t75" style='width:11.25pt;
+ height:15.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image036.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1067"
+  DrawAspect="Content" ObjectID="_1192117440">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>的夾角</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'>θ</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><span style="mso-spacerun: yes">&nbsp;</span>[</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>隨堂練習</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'>15](P.191)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>設</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1068" type="#_x0000_t75"
+ style='width:75pt;height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image037.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1068"
+  DrawAspect="Content" ObjectID="_1192117441">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>和</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1069" type="#_x0000_t75" style='width:39.75pt;
+ height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image038.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1069"
+  DrawAspect="Content" ObjectID="_1192117442">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>為座標上三點</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>,</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>試求</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'>△</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>ABC</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>的三內角</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;
+font-family:華康新儷粗黑;color:purple'>【乙】向量正射影<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-indent:26.9pt;mso-char-indent-count:1.92;
+mso-char-indent-size:14.0pt'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:華康新儷粗黑;color:purple'>(1)定義: 設<sub><v:shape
+ id="_x0000_i1070" type="#_x0000_t75" style='width:9.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1070"
+  DrawAspect="Content" ObjectID="_1192117443">
+ </o:OLEObject>
+</xml><![endif]-->=<sub><v:shape id="_x0000_i1071" type="#_x0000_t75" style='width:20.25pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image040.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1071"
+  DrawAspect="Content" ObjectID="_1192117444">
+ </o:OLEObject>
+</xml><![endif]-->為一向量,L為一直線，<sub><v:shape id="_x0000_i1072" type="#_x0000_t75"
+ style='width:9.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1072"
+  DrawAspect="Content" ObjectID="_1192117445">
+ </o:OLEObject>
+</xml><![endif]-->在直線L上的正射影<sub><v:shape id="_x0000_i1073" type="#_x0000_t75"
+ style='width:12pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image041.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1073"
+  DrawAspect="Content" ObjectID="_1192117446">
+ </o:OLEObject>
+</xml><![endif]-->的<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:華康新儷粗黑;color:purple'><span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span>充要條件<sub><v:shape id="_x0000_i1074" type="#_x0000_t75"
+ style='width:17.25pt;height:12pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image028.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1074"
+  DrawAspect="Content" ObjectID="_1192117447">
+ </o:OLEObject>
+</xml><![endif]-->1. <sub><v:shape id="_x0000_i1075" type="#_x0000_t75"
+ style='width:12pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image041.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1075"
+  DrawAspect="Content" ObjectID="_1192117448">
+ </o:OLEObject>
+</xml><![endif]-->落在L上且2.( <sub><v:shape id="_x0000_i1076" type="#_x0000_t75"
+ style='width:9.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1076"
+  DrawAspect="Content" ObjectID="_1192117449">
+ </o:OLEObject>
+</xml><![endif]-->－<sub><v:shape id="_x0000_i1077" type="#_x0000_t75" style='width:12pt;
+ height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image041.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1077"
+  DrawAspect="Content" ObjectID="_1192117450">
+ </o:OLEObject>
+</xml><![endif]-->)⊥L<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:28.0pt;mso-char-indent-count:2.0;mso-char-indent-size:14.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:華康新儷粗黑;
+color:purple'>(2)公式：設直線L的方向向量<sub><v:shape id="_x0000_i1078" type="#_x0000_t75"
+ style='width:9pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image042.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1078"
+  DrawAspect="Content" ObjectID="_1192117451">
+ </o:OLEObject>
+</xml><![endif]-->≠0(<sub><v:shape id="_x0000_i1079" type="#_x0000_t75"
+ style='width:9pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image042.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1079"
+  DrawAspect="Content" ObjectID="_1192117452">
+ </o:OLEObject>
+</xml><![endif]-->//L), 則<sub><v:shape id="_x0000_i1080" type="#_x0000_t75"
+ style='width:9.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1080"
+  DrawAspect="Content" ObjectID="_1192117453">
+ </o:OLEObject>
+</xml><![endif]-->在直線L上的<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:20.0pt;mso-char-indent-count:2.0;mso-char-indent-size:10.0pt'><v:shape
+ id="_x0000_s1043" type="#_x0000_t202" style='position:absolute;left:0;
+ text-align:left;margin-left:270pt;margin-top:9pt;width:240.9pt;height:128.7pt;
+ z-index:2' strokecolor="white">
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal><span lang=EN-US><v:shape id="_x0000_i1251" type="#_x0000_t75"
+     style='width:225.75pt;height:120.75pt' o:ole="">
+     <v:imagedata src="./B3-1-4.files/image043.wmz" o:title=""/>
+    </v:shape><!--[if gte mso 9]><o:OLEObject Type="Embed"
+     ProgID="Word.Picture.8" ShapeID="_x0000_i1251" DrawAspect="Content"
+     ObjectID="_1192117454">
+    </o:OLEObject>
+   <![endif]--></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:華康新儷粗黑;color:purple'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:42.0pt;mso-char-indent-count:3.0;mso-char-indent-size:14.0pt'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:華康新儷粗黑;
+color:purple'>正射影<span lang=EN-US><sub><v:shape id="_x0000_i1291" type="#_x0000_t75"
+ style='width:12pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image041.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1291"
+  DrawAspect="Content" ObjectID="_1192117455">
+ </o:OLEObject>
+</xml><![endif]-->=<sub><v:shape id="_x0000_i1292" type="#_x0000_t75" style='width:33.75pt;
+ height:39pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image044.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1292"
+  DrawAspect="Content" ObjectID="_1192117456">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style="mso-spacerun: yes">&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;</span><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:華康新儷粗黑;color:purple'>pf: By 1.<sub><v:shape id="_x0000_i1293"
+ type="#_x0000_t75" style='width:12pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image041.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1293"
+  DrawAspect="Content" ObjectID="_1192117457">
+ </o:OLEObject>
+</xml><![endif]-->=r<sub><v:shape id="_x0000_i1294" type="#_x0000_t75" style='width:9pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image042.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1294"
+  DrawAspect="Content" ObjectID="_1192117458">
+ </o:OLEObject>
+</xml><![endif]--> r<sub><v:shape id="_x0000_i1295" type="#_x0000_t75" style='width:9.75pt;
+ height:9.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image045.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1295"
+  DrawAspect="Content" ObjectID="_1192117459">
+ </o:OLEObject>
+</xml><![endif]-->R<span style="mso-spacerun: yes">&nbsp; </span>2. .( <sub><v:shape
+ id="_x0000_i1296" type="#_x0000_t75" style='width:9.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1296"
+  DrawAspect="Content" ObjectID="_1192117460">
+ </o:OLEObject>
+</xml><![endif]-->－<sub><v:shape id="_x0000_i1297" type="#_x0000_t75" style='width:12pt;
+ height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image041.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1297"
+  DrawAspect="Content" ObjectID="_1192117461">
+ </o:OLEObject>
+</xml><![endif]-->)‧<sub><v:shape id="_x0000_i1298" type="#_x0000_t75" style='width:9pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image042.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1298"
+  DrawAspect="Content" ObjectID="_1192117462">
+ </o:OLEObject>
+</xml><![endif]-->=0<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:華康新儷粗黑;color:purple'>[註] <span style="mso-spacerun:
+yes">&nbsp;</span><sub><v:shape id="_x0000_i1091" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1091"
+  DrawAspect="Content" ObjectID="_1192117463">
+ </o:OLEObject>
+</xml><![endif]-->在<sub><v:shape id="_x0000_i1092" type="#_x0000_t75" style='width:9pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image042.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1092"
+  DrawAspect="Content" ObjectID="_1192117464">
+ </o:OLEObject>
+</xml><![endif]-->上正射影<sub><v:shape id="_x0000_i1093" type="#_x0000_t75"
+ style='width:12pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image041.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1093"
+  DrawAspect="Content" ObjectID="_1192117465">
+ </o:OLEObject>
+</xml><![endif]-->=<sub><v:shape id="_x0000_i1094" type="#_x0000_t75" style='width:33.75pt;
+ height:39pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image044.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1094"
+  DrawAspect="Content" ObjectID="_1192117466">
+ </o:OLEObject>
+</xml><![endif]-->=(<sub><v:shape id="_x0000_i1095" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1095"
+  DrawAspect="Content" ObjectID="_1192117467">
+ </o:OLEObject>
+</xml><![endif]-->‧<sub><v:shape id="_x0000_i1096" type="#_x0000_t75" style='width:14.25pt;
+ height:39pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image046.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1096"
+  DrawAspect="Content" ObjectID="_1192117468">
+ </o:OLEObject>
+</xml><![endif]-->)<sub><v:shape id="_x0000_i1097" type="#_x0000_t75" style='width:14.25pt;
+ height:39pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image046.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1097"
+  DrawAspect="Content" ObjectID="_1192117469">
+ </o:OLEObject>
+</xml><![endif]--> , <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:華康新儷粗黑;color:purple'>即<span lang=EN-US><sub><v:shape id="_x0000_i1098"
+ type="#_x0000_t75" style='width:9.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1098"
+  DrawAspect="Content" ObjectID="_1192117470">
+ </o:OLEObject>
+</xml><![endif]-->在位向量<sub><v:shape id="_x0000_i1099" type="#_x0000_t75"
+ style='width:14.25pt;height:39pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image046.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1099"
+  DrawAspect="Content" ObjectID="_1192117471">
+ </o:OLEObject>
+</xml><![endif]-->上分量(內積)再乘單位向量<sub><v:shape id="_x0000_i1100" type="#_x0000_t75"
+ style='width:14.25pt;height:39pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image046.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1100"
+  DrawAspect="Content" ObjectID="_1192117472">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:華康新儷粗黑;color:purple'>同理<span lang=EN-US><sub><v:shape id="_x0000_i1136"
+ type="#_x0000_t75" style='width:9.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1136"
+  DrawAspect="Content" ObjectID="_1192117473">
+ </o:OLEObject>
+</xml><![endif]-->在<sub><v:shape id="_x0000_i1137" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image047.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1137"
+  DrawAspect="Content" ObjectID="_1192117474">
+ </o:OLEObject>
+</xml><![endif]-->上正射影<sub><v:shape id="_x0000_i1138" type="#_x0000_t75"
+ style='width:11.25pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image048.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1138"
+  DrawAspect="Content" ObjectID="_1192117475">
+ </o:OLEObject>
+</xml><![endif]-->=(<sub><v:shape id="_x0000_i1139" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image039.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1139"
+  DrawAspect="Content" ObjectID="_1192117476">
+ </o:OLEObject>
+</xml><![endif]-->‧<sub><v:shape id="_x0000_i1140" type="#_x0000_t75" style='width:15pt;
+ height:39pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image049.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1140"
+  DrawAspect="Content" ObjectID="_1192117477">
+ </o:OLEObject>
+</xml><![endif]-->)<sub><v:shape id="_x0000_i1141" type="#_x0000_t75" style='width:15pt;
+ height:39pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image049.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1141"
+  DrawAspect="Content" ObjectID="_1192117478">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>〔丙〕</span><span lang=EN-US><v:shape id="_x0000_i1142"
+ type="#_x0000_t75" style='width:24pt;height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image050.png" o:title=""/>
+</v:shape><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1142"
+  DrawAspect="Content" ObjectID="_1192117479">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>平行四邊形</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>(</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>三角形</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>)</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>面積公式</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>(1)</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>設以</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1143" type="#_x0000_t75" style='width:47.25pt;
+ height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image051.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1143"
+  DrawAspect="Content" ObjectID="_1192117480">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>和</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1144" type="#_x0000_t75" style='width:47.25pt;
+ height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image052.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1144"
+  DrawAspect="Content" ObjectID="_1192117481">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>為相鄰兩邊的平行四邊形面積為</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>A<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>則</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'> A=<sub><v:shape id="_x0000_i1145"
+ type="#_x0000_t75" style='width:35.25pt;height:36pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image053.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1145"
+  DrawAspect="Content" ObjectID="_1192117482">
+ </o:OLEObject>
+</xml><![endif]-->=</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∥</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>ad</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>－</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>bc</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∥</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'>pf: </span></b><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>設</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1146" type="#_x0000_t75"
+ style='width:9.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image054.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1146"
+  DrawAspect="Content" ObjectID="_1192117483">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>和</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1147" type="#_x0000_t75" style='width:9pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image055.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1147"
+  DrawAspect="Content" ObjectID="_1192117484">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>的夾角為</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'>θ<span
+lang=EN-US>,</span></span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'> </span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>面積</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'>A<sup>2</sup>=(∣</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1148" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image054.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1148"
+  DrawAspect="Content" ObjectID="_1192117485">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∣∣</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1149" type="#_x0000_t75" style='width:9pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image055.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1149"
+  DrawAspect="Content" ObjectID="_1192117486">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∣</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>sin</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流'>θ<span lang=EN-US>)<sup>2</sup><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:28.0pt;mso-char-indent-count:2.0;mso-char-indent-size:14.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'>=∣</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1150" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image054.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1150"
+  DrawAspect="Content" ObjectID="_1192117487">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∣</span><sup><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>2</span></sup><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∣</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1151" type="#_x0000_t75" style='width:9pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image055.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1151"
+  DrawAspect="Content" ObjectID="_1192117488">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∣</span><sup><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>2</span></sup><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'> </span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>－</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>(<sub><v:shape id="_x0000_i1152" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image054.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1152"
+  DrawAspect="Content" ObjectID="_1192117489">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>‧</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1153" type="#_x0000_t75" style='width:9pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image055.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1153"
+  DrawAspect="Content" ObjectID="_1192117490">
+ </o:OLEObject>
+</xml><![endif]-->)<sup>2</sup>=( ad</span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>－</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>bc)<sup>2</sup><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:28.0pt;mso-char-indent-count:2.0;mso-char-indent-size:14.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>(2)</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>若</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1154" type="#_x0000_t75" style='width:131.25pt;
+ height:18.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image056.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1154"
+  DrawAspect="Content" ObjectID="_1192117491">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>則</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1155" type="#_x0000_t75" style='width:60pt;
+ height:18.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image057.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1155"
+  DrawAspect="Content" ObjectID="_1192117492">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>所組</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'>Δ</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>ABC</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>之面積</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1156" type="#_x0000_t75" style='width:95.25pt;
+ height:30.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image058.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1156"
+  DrawAspect="Content" ObjectID="_1192117493">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>其中</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流'>θ</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>為</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1157" type="#_x0000_t75" style='width:39pt;
+ height:18.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image059.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1157"
+  DrawAspect="Content" ObjectID="_1192117494">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>夾角</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1158" type="#_x0000_t75" style='width:206.25pt;
+ height:38.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image060.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1158"
+  DrawAspect="Content" ObjectID="_1192117495">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:華康新儷粗黑;
+color:purple'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><span
+style="mso-spacerun: yes">&nbsp; </span></span></b><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>[</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>隨堂練習</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>](P.192)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>已知</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1159"
+ type="#_x0000_t75" style='width:54pt;height:15.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image061.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1159"
+  DrawAspect="Content" ObjectID="_1192117496">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>和</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1160" type="#_x0000_t75" style='width:45.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image062.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1160"
+  DrawAspect="Content" ObjectID="_1192117497">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>決定一平行四邊形</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>,</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>試求此平行四邊形的面積</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><span style="mso-spacerun: yes">&nbsp;</span>[</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>丁</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'>]</span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>柯西不等式</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>:</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;color:teal'> <sub><v:shape id="_x0000_i1161" type="#_x0000_t75" style='width:114pt;
+ height:20.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image063.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1161"
+  DrawAspect="Content" ObjectID="_1192117498">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:8.95pt;mso-char-indent-count:.64;
+mso-char-indent-size:13.95pt'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:teal'><sub><v:shape id="_x0000_i1162" type="#_x0000_t75"
+ style='width:84pt;height:26.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image064.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1162"
+  DrawAspect="Content" ObjectID="_1192117499">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp;</span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:teal'>當等號成立〡</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1163" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image054.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1163"
+  DrawAspect="Content" ObjectID="_1192117500">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>‧</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1164" type="#_x0000_t75" style='width:9pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image055.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1164"
+  DrawAspect="Content" ObjectID="_1192117501">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>〡</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>=</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流'>∣</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1165" type="#_x0000_t75"
+ style='width:9.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image054.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1165"
+  DrawAspect="Content" ObjectID="_1192117502">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∣∣</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1166" type="#_x0000_t75" style='width:9pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image055.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1166"
+  DrawAspect="Content" ObjectID="_1192117503">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∣</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1167" type="#_x0000_t75" style='width:17.25pt;
+ height:12pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image028.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1167"
+  DrawAspect="Content" ObjectID="_1192117504">
+ </o:OLEObject>
+</xml><![endif]--><sub><v:shape id="_x0000_i1168" type="#_x0000_t75" style='width:9.75pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image054.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1168"
+  DrawAspect="Content" ObjectID="_1192117505">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>與</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1169" type="#_x0000_t75" style='width:9pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image055.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1169"
+  DrawAspect="Content" ObjectID="_1192117506">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>平行。</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:8.95pt;mso-char-indent-count:.64;
+mso-char-indent-size:13.95pt'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><span
+style="mso-spacerun: yes">&nbsp; </span></span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>或</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>(2) (ac+bd)<sup>2</sup> </span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>≦</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>(a<sup>2</sup>+b<sup>2</sup>)(c<sup>2</sup>+d<sup>2</sup>)</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:teal'> </span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:teal'>當等號成立</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1171" type="#_x0000_t75" style='width:17.25pt;
+ height:12pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image028.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1171"
+  DrawAspect="Content" ObjectID="_1192117507">
+ </o:OLEObject>
+</xml><![endif]-->a</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>：</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>c=b</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>：</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>d</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;color:teal'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:teal'>證明</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:teal'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;color:teal'><sub><v:shape id="_x0000_i1170" type="#_x0000_t75" style='width:327pt;
+ height:143.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image065.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1170"
+  DrawAspect="Content" ObjectID="_1192117508">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:teal'>證明</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;color:teal'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;color:teal'><sub><v:shape id="_x0000_i1172" type="#_x0000_t75" style='width:201.75pt;
+ height:47.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image066.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1172"
+  DrawAspect="Content" ObjectID="_1192117509">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:華康新儷粗黑;color:navy'><sub><v:shape id="_x0000_i1173" type="#_x0000_t75"
+ style='width:249pt;height:25.5pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image067.wmz" o:title="" cropbottom="25938f"/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1173"
+  DrawAspect="Content" ObjectID="_1192117510">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>[</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>隨堂練習</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>17](P.193)<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>三</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'>P.5(41)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>已知三頂點</span><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1307"
+ type="#_x0000_t75" style='width:74.25pt;height:15.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image068.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1307"
+  DrawAspect="Content" ObjectID="_1192117511">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>和</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1308" type="#_x0000_t75" style='width:42pt;
+ height:15.75pt' o:ole="">
+ <v:imagedata src="./B3-1-4.files/image069.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1308"
+  DrawAspect="Content" ObjectID="_1192117512">
+ </o:OLEObject>
+</xml><![endif]-->,</span><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>試求</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流'>Δ</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>ABC</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>的面積</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;mso-fareast-font-family:全真勘亭流'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>[</span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>隨堂練習</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>19](P.196)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l5 level1 lfo5;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>設</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1309" type="#_x0000_t75"
+ style='width:48pt;height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image070.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1309"
+  DrawAspect="Content" ObjectID="_1192117513">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>試問一向量</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1310" type="#_x0000_t75" style='width:11.25pt;
+ height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image071.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1310"
+  DrawAspect="Content" ObjectID="_1192117514">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>使</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1311" type="#_x0000_t75" style='width:11.25pt;
+ height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image072.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1311"
+  DrawAspect="Content" ObjectID="_1192117515">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>和</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1312" type="#_x0000_t75" style='width:9.75pt;
+ height:12.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image073.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1312"
+  DrawAspect="Content" ObjectID="_1192117516">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>同向</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>,<sub><v:shape id="_x0000_i1313" type="#_x0000_t75" style='width:30pt;
+ height:21.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image074.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1313"
+  DrawAspect="Content" ObjectID="_1192117517">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'>Ans: </span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∵</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1314" type="#_x0000_t75" style='width:9.75pt;
+ height:12.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image073.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1314"
+  DrawAspect="Content" ObjectID="_1192117518">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>和</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1315" type="#_x0000_t75" style='width:11.25pt;
+ height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image072.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1315"
+  DrawAspect="Content" ObjectID="_1192117519">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>同向</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∴</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1316" type="#_x0000_t75" style='width:68.25pt;
+ height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image075.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1316"
+  DrawAspect="Content" ObjectID="_1192117520">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>∴</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1317" type="#_x0000_t75"
+ style='width:96.75pt;height:15.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image076.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1317"
+  DrawAspect="Content" ObjectID="_1192117521">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp; </span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>∵</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1318" type="#_x0000_t75"
+ style='width:30pt;height:21.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image077.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1318"
+  DrawAspect="Content" ObjectID="_1192117522">
+ </o:OLEObject>
+</xml><![endif]--> <sub><v:shape id="_x0000_i1319" type="#_x0000_t75" style='width:9pt;
+ height:17.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image078.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1319"
+  DrawAspect="Content" ObjectID="_1192117523">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:全真勘亭流;mso-ascii-font-family:"Times New Roman"'>∴</span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><sub><v:shape id="_x0000_i1320" type="#_x0000_t75" style='width:123.75pt;
+ height:30.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image079.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1320"
+  DrawAspect="Content" ObjectID="_1192117524">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+全真勘亭流'><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:全真勘亭流;mso-ascii-font-family:
+"Times New Roman"'>∴</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;mso-fareast-font-family:全真勘亭流'><sub><v:shape id="_x0000_i1321" type="#_x0000_t75"
+ style='width:51.75pt;height:30.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B3-1-4.files/image080.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1321"
+  DrawAspect="Content" ObjectID="_1192117525">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

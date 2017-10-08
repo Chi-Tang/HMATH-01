@@ -1,0 +1,504 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./B1-2-03.files/filelist.xml">
+<link rel=Edit-Time-Data href="./B1-2-03.files/editdata.mso">
+<link rel=OLE-Object-Data href="./B1-2-03.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>3-3　數學歸納法</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>SHU</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>User</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>4</o:TotalTime>
+  <o:LastPrinted>2006-08-05T08:59:00Z</o:LastPrinted>
+  <o:Created>2007-08-16T09:38:00Z</o:Created>
+  <o:LastSaved>2007-08-16T09:38:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>115</o:Words>
+  <o:Characters>657</o:Characters>
+  <o:Company>FCSH</o:Company>
+  <o:Lines>5</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>806</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:新細明體;
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-alt:PMingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:新細明體;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:34.0pt 89.85pt 72.0pt 79.4pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1083"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-TW link=blue vlink=purple style='tab-interval:24.0pt;text-justify-trim:
+punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:right dotted 408.25pt;
+mso-line-break-override:restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+mso-char-indent-size:12.0pt;mso-char-indent-size:12pt'><span lang=EN-US>2-3<span
+style="mso-spacerun: yes">&nbsp; </span></span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>數</span>
+<span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>學</span> <span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>歸</span>
+<span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>納</span> <span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>法</span><span
+lang=EN-US> (</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>凡有自然數</span><span lang=EN-US>n</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的公式</span> <span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>証明方法</span><span
+lang=EN-US>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5gd;text-indent:-6.0pt;mso-char-indent-count:
+-.5;mso-char-indent-size:12.0pt;mso-char-indent-size:12pt'><span lang=EN-US>[
+1.] </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>數學歸納法的理論：</span><span lang=EN-US>[</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>註</span><span lang=EN-US>]</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>∵自然數</span><span
+lang=EN-US>(</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>計物數</span><span lang=EN-US>)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>具有後繼性</span><span lang=EN-US><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:9pt;
+ height:17.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B1-2-03.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=12 height=23
+src="./B1-2-03.files/image002.gif" v:shapes="_x0000_i1025"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1248791105">
+ </o:OLEObject>
+</xml><![endif]--><br>
+</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>設</span><i><span lang=EN-US>P</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>n</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）表“與自然數</span><i><span lang=EN-US>n</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>有關的命題”，如果</span></p>
+
+<p class=MsoNormal style='margin-top:0pt;margin-right:5.65pt;margin-bottom:
+0pt;margin-left:41.95pt;margin-bottom:.0001pt;text-indent:-20.4pt;mso-line-break-override:
+restrictions'><span lang=EN-US>(1) </span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>當</span><i><span
+lang=EN-US>n</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><i><span
+lang=EN-US>n</span></i><sub><span lang=EN-US>0</span></sub><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>時，</span><i><span lang=EN-US>P</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>n</span></i><sub><span
+lang=EN-US>0</span></sub><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）成立。（</span><i><span
+lang=EN-US>n</span></i><sub><span lang=EN-US>0</span></sub><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>是某一固定的自然數，例如</span><i><span lang=EN-US>n</span></i><sub><span
+lang=EN-US>0</span></sub><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US>1</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>或</span><span lang=EN-US>2</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>或</span><span lang=EN-US>3</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）。</span></p>
+
+<p class=MsoNormal style='margin-top:0pt;margin-right:5.65pt;margin-bottom:
+0pt;margin-left:41.95pt;margin-bottom:.0001pt;text-indent:-20.4pt;mso-line-break-override:
+restrictions'><span lang=EN-US>(2) </span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>若</span><i><span
+lang=EN-US>n</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><i><span
+lang=EN-US>k</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>k </span></i><span lang=EN-US style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>&sup3;</span></span><span lang=EN-US> <i>n</i><sub>0</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）時，</span><i><span lang=EN-US>P</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>k</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）都成立，</span></p>
+
+<p class=MsoNormal style='margin-top:0pt;margin-right:5.65pt;margin-bottom:
+0pt;margin-left:3.5gd;margin-bottom:.0001pt;mso-line-break-override:restrictions'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>則由</span><span lang=EN-US>(2)</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>推得</span>
+<i><span lang=EN-US>n</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><i><span
+lang=EN-US>k</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>1</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，</span><i><span lang=EN-US>P</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>k</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><span lang=EN-US>1</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）也成立。</span></p>
+
+<p class=MsoNormal style='margin-top:0pt;margin-right:5.65pt;margin-bottom:
+0pt;margin-left:3.5gd;margin-bottom:.0001pt;mso-line-break-override:restrictions'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>故對一切自然數</span><i><span lang=EN-US>n</span></i><span
+lang=EN-US> </span><span lang=EN-US style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>&sup3;</span></span><span lang=EN-US> <i>n</i><sub>0</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><i><span lang=EN-US>P</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>n</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）都成立。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>[</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>範例</span><span
+lang=EN-US>1]</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>驗證</span><span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:173.25pt;height:33.75pt'
+ o:ole="">
+ <v:imagedata src="./B1-2-03.files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=231 height=45
+src="./B1-2-03.files/image004.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1248791106">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:blue'>証明</span><span lang=EN-US
+style='color:blue'>:</span><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp; </span>(1) </span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>當</span><span
+lang=EN-US>n=1</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>時</span><span lang=EN-US>,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>左</span><span lang=EN-US>=<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:101.25pt;height:33.75pt'
+ o:ole="">
+ <v:imagedata src="./B1-2-03.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=135 height=45
+src="./B1-2-03.files/image006.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1248791107">
+ </o:OLEObject>
+</xml><![endif]-->=</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>右</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(2) </span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>設</span><span
+lang=EN-US>n=k</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>時</span><span lang=EN-US>,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>原式成立即</span><span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:174pt;height:33.75pt' o:ole="">
+ <v:imagedata src="./B1-2-03.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=232 height=45
+src="./B1-2-03.files/image008.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1248791108">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal style='margin-left:24.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span>(3) </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>令</span><span lang=EN-US>n=k+1 </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>代入左</span><span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:342.75pt;height:78pt' o:ole="">
+ <v:imagedata src="./B1-2-03.files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=457 height=104
+src="./B1-2-03.files/image010.gif" v:shapes="_x0000_i1029"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1248791109">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal style='margin-left:24.0pt'><span lang=EN-US>(1)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>等式問題：</span><span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:289.5pt;height:30.75pt'
+ o:ole="">
+ <v:imagedata src="./B1-2-03.files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=386 height=41
+src="./B1-2-03.files/image012.gif" v:shapes="_x0000_i1030"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1248791110">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:24.0pt'><span lang=EN-US>(2)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>不等式問題：<span style='color:black'>利用數學歸納法證明下列不等式，</span></span><span
+lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1031"
+ type="#_x0000_t75" style='width:108pt;height:18pt' o:ole="">
+ <v:imagedata src="./B1-2-03.files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=144 height=24
+src="./B1-2-03.files/image014.gif" v:shapes="_x0000_i1031"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1248791111">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:24.0pt'><span lang=EN-US>(3)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>倍數問題：<span style='color:black'>已知對所有正整數</span></span><span
+lang=EN-US style='color:black'>n</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>，若</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:56.25pt;height:17.25pt'
+ o:ole="">
+ <v:imagedata src="./B1-2-03.files/image015.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=75 height=23
+src="./B1-2-03.files/image016.gif" v:shapes="_x0000_i1032"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.2" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1248791112">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>恆為某一質數的倍數，</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0gd;text-indent:24.0pt;mso-char-indent-count:
+2.0;mso-char-indent-size:12.0pt;mso-char-indent-size:12pt'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>試求此質數，</span><span style='color:black'> </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>並驗證你的答案。答：</span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>７，略</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:12.0pt;color:teal'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-left:24.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:24.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>[2]. </span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>遞迴數列定義：</span><span
+lang=EN-US><br>
+</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>一個數列〈</span><i><span lang=EN-US>a<sub>n</sub></span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>〉，如果</span><span lang=EN-US><br>
+(1) </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>給定前</span><i><span lang=EN-US>n</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>項（如</span><i><span lang=EN-US>a</span></i><sub><span
+lang=EN-US>1</span></sub><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>2</span></sub><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）的值</span><span lang=EN-US>,</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>稱為初始條件。</span><span
+lang=EN-US><br>
+(2) </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>一般項</span><i><span lang=EN-US>a<sub>n</sub></span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>可用前相鄰項</span><i><span lang=EN-US>a</span></i><sub><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:17.25pt;height:18pt' o:ole="">
+ <v:imagedata src="./B1-2-03.files/image017.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=24
+src="./B1-2-03.files/image018.gif" v:shapes="_x0000_i1033"><![endif]></span></sub><i><span
+lang=EN-US><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1248791113">
+ </o:OLEObject>
+</xml><![endif]--></span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1034"
+ type="#_x0000_t75" style='width:18pt;height:18pt' o:ole="">
+ <v:imagedata src="./B1-2-03.files/image019.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=24 height=24
+src="./B1-2-03.files/image020.gif" v:shapes="_x0000_i1034"><![endif]></span></sub><i><span
+lang=EN-US><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1248791114">
+ </o:OLEObject>
+</xml><![endif]--></span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，……表</span><span
+style='mso-bidi-font-size:12.5pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";letter-spacing:-1.0pt'>示</span><span
+lang=EN-US style='mso-bidi-font-size:12.5pt;letter-spacing:-1.0pt'>,</span><span
+style='mso-bidi-font-size:12.5pt;font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";letter-spacing:-1.0pt'>即</span><i><span
+lang=EN-US>a<sub>n</sub></span></i><span lang=EN-US>=f(a<sub>n-1</sub>,a<sub>n-2</sub>)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（稱為遞迴關係</span><span style='mso-bidi-font-size:12.5pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";letter-spacing:-1.0pt'>）。</span><span lang=EN-US><br>
+</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>此數列就是遞迴數列。</span><span lang=EN-US><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:-.5gd;text-indent:-17.5pt;mso-char-indent-count:
+-1.25;mso-char-indent-size:14.0pt;mso-char-indent-size:14pt'><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:12.0pt;color:teal'><span style="mso-spacerun:
+yes">&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span></i><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><sub><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1035"
+ type="#_x0000_t75" style='width:394.5pt;height:24.75pt' o:ole="">
+ <v:imagedata src="./B1-2-03.files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=526 height=33
+src="./B1-2-03.files/image022.gif" v:shapes="_x0000_i1035"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1248791115">
+ </o:OLEObject>
+</xml><![endif]--></span></sub></p>
+
+<p class=MsoNormal style='margin-left:.75gd'><sub><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:123.75pt;height:17.25pt'
+ o:ole="" o:allowoverlap="f">
+ <v:imagedata src="./B1-2-03.files/image023.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=165 height=23
+src="./B1-2-03.files/image024.gif" v:shapes="_x0000_i1036"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1248791116">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte vml 1]><v:shape id="_x0000_i1037" type="#_x0000_t75"
+ style='width:20.25pt;height:15pt' o:ole="" o:allowoverlap="f">
+ <v:imagedata src="./B1-2-03.files/image025.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=20
+src="./B1-2-03.files/image026.gif" v:shapes="_x0000_i1037"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1248791117">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte vml 1]><v:shape id="_x0000_i1038" type="#_x0000_t75"
+ style='width:207pt;height:30.75pt' o:ole="" o:allowoverlap="f">
+ <v:imagedata src="./B1-2-03.files/image027.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=276 height=41
+src="./B1-2-03.files/image028.gif" v:shapes="_x0000_i1038"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1248791118">
+ </o:OLEObject>
+</xml><![endif]--></span></sub></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0pt;margin-bottom:0pt;
+margin-left:22.95pt;margin-bottom:.0001pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

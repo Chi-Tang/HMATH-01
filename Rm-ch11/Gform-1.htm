@@ -1,0 +1,77 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title> 留 言 表 單</title>
+</head>
+
+<body background="../b01.jpg">
+
+<table border="1" cellpadding="4" cellspacing="0" width="100%"
+bgcolor="#D0D0EC">
+    <tr>
+        <td align="center"><font color="#000080" size="5"><b>訪 客&nbsp; 的 留 言 表 單</b></font></td>    
+    </tr>
+</table>
+
+<form action="gform.asp" method="POST">
+    <table border="1" cellpadding="3" cellspacing="0"
+    width="100%">
+        <tr>
+            <td>姓名:</td>
+            <td><input type="text" size="20" name="Name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" size="40" name="Email"></td>
+        </tr>
+        <tr>
+            <td>主題:</td>
+            <td><input type="text" size="60" name="Subject"></td>
+        </tr>
+        <tr>
+            <td valign="top">留言: </td>
+            <td><textarea name="Memo" rows="4" cols="60"></textarea></td>
+        </tr>
+        <tr>
+            <td valign="top">心情圖示：</td>
+            <td valign="top"><input type="radio" checked
+            name="Pic" value="Face01.gif"><img src="Face01.gif"
+            align="middle" width="80" height="124"><input
+            type="radio" name="Pic" value="Face02.gif"><img
+            src="Face02.gif" align="middle" width="80"
+            height="124"><input type="radio" name="Pic"
+            value="Face03.gif"><img src="Face03.gif"
+            align="middle" width="80" height="124"><input
+            type="radio" name="Pic" value="Face04.gif"><img
+            src="Face04.gif" align="middle" width="80"
+            height="124"><input type="radio" name="Pic"
+            value="Face05.gif"><img src="Face05.gif"
+            align="middle" width="80" height="124"><br>
+            <input type="radio" name="Pic" value="Face06.gif"><img
+            src="Face06.gif" align="middle" width="80"
+            height="124"><input type="radio" name="Pic"
+            value="Face07.gif"><img src="Face07.gif"
+            align="middle" width="80" height="124"><input
+            type="radio" name="Pic" value="Face08.gif"><img
+            src="Face08.gif" align="middle" width="80"
+            height="124"><input type="radio" name="Pic"
+            value="Face09.gif"><img src="Face09.gif"
+            align="middle" width="80" height="124"><input
+            type="radio" name="Pic" value="No">不要心情圖示</td>
+        </tr>
+    </table>
+    <div align="center"><center><table border="0" width="100%">
+        <tr>
+            <td align="center"><input type="submit" name="SEND"
+            value="送出留言"></td>
+            <td align="center"><a href="gbook.asp">觀看留言</a></td>
+            <td align="center"><input type="reset"
+            value="清掉重寫"></td>
+        </tr>
+    </table>
+    </center></div>
+</form>
+</body>
+</html>

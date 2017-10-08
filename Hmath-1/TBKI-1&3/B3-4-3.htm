@@ -1,0 +1,1533 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./B3-4-3.files/filelist.xml">
+<link rel=Edit-Time-Data href="./B3-4-3.files/editdata.mso">
+<link rel=OLE-Object-Data href="./B3-4-3.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>4-3 球面方程式</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>USER</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>SHU</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2005-11-02T08:38:00Z</o:Created>
+  <o:LastSaved>2005-11-02T08:38:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>506</o:Words>
+  <o:Characters>2885</o:Characters>
+  <o:Lines>24</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>3542</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:新細明體;
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-alt:PMingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:新細明體;
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:18.0pt 118.3pt 72.0pt 18.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:229079057;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-667766992 1297808828 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-start-at:2;
+	mso-level-text:"\(%1\)";
+	mso-level-tab-stop:25.5pt;
+	mso-level-number-position:left;
+	margin-left:25.5pt;
+	text-indent:-25.5pt;}
+@list l1
+	{mso-list-id:537012034;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-235088776 -590309442 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-start-at:4;
+	mso-level-number-format:bullet;
+	mso-level-text:��;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;
+	mso-fareast-font-family:新細明體;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2
+	{mso-list-id:577906309;
+	mso-list-type:hybrid;
+	mso-list-template-ids:405970606 1957213452 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:1081373482;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-8741790 -752037842 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:1122726172;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1805140540 -1 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l4:level1
+	{mso-level-suffix:space;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:39.0pt;
+	text-indent:-9.0pt;}
+@list l5
+	{mso-list-id:1775978691;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-727969854 1444739300 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-TW style='tab-interval:24.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>4-3 </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>球面方程式</span><u><span lang=EN-US><o:p></o:p></span></u></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>[A]</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>球的方程式</span><u><span lang=EN-US><o:p></o:p></span></u></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>[1].</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>標準式</span><span lang=EN-US>: </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>由定義</span><span lang=EN-US>: </span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>空間中與<u>某定點</u></span><u><span
+lang=EN-US>(</span></u><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>球心</span><u><span lang=EN-US>)</span></u><u><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>等距離</span><span lang=EN-US>(</span></u><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>半徑</span><u><span
+lang=EN-US>)</span></u><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的所有點的圖形</span><span
+lang=EN-US>,</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>稱為球</span><span lang=EN-US>S.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:12.0pt;mso-char-indent-count:1.0;mso-char-indent-size:12.0pt'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>設空間平有一球面其球心</span><span lang=EN-US
+style='color:black'>O(<sub><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:51pt;
+ height:18pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=68 height=24
+src="./B3-4-3.files/image002.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1192455163">
+ </o:OLEObject>
+</xml><![endif]-->,</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>半徑</span><span
+lang=EN-US style='color:black'>r, </span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>則球面的方程式</span><span lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'>S: <sub><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:176.25pt;height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=235 height=27
+src="./B3-4-3.files/image004.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1192455164">
+ </o:OLEObject>
+</xml><![endif]-->------</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>標準式</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp;</span>[</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>註</span><span lang=EN-US style='color:black'>]</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>球心在原點</span><span lang=EN-US style='color:black'>,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>半徑為</span><span lang=EN-US style='color:black'>1</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>的球稱作單位球</span><span lang=EN-US style='color:
+black'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:12.0pt;mso-char-indent-count:1.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'>Pf: </span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>設球面上任一點</span><span lang=EN-US style='color:black'>P(x,y,z),</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>球心</span><span lang=EN-US style='color:black'>O(0,0,0),</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>半徑</span><span lang=EN-US style='color:black'>r
+, </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>由</span><span
+style='color:black'> <span lang=EN-US><sub><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:20.25pt;height:17.25pt' o:ole="" o:bullet="t">
+ <v:imagedata src="./B3-4-3.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=23
+src="./B3-4-3.files/image006.gif" alt="*" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1192455165">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>&nbsp; </span>=r<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-justify:
+inter-ideograph;tab-stops:list 54.0pt'><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:144.75pt;height:23.25pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=193 height=31
+src="./B3-4-3.files/image008.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1192455166">
+ </o:OLEObject>
+</xml><![endif]-->=r<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-justify:
+inter-ideograph;tab-stops:list 54.0pt'><span lang=EN-US style='color:black'>x<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:8.25pt;height:15pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=11 height=20
+src="./B3-4-3.files/image010.gif" v:shapes="_x0000_i1029"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1192455167">
+ </o:OLEObject>
+</xml><![endif]-->+y<sub><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75"
+ style='width:51pt;height:15pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=68 height=20
+src="./B3-4-3.files/image012.gif" v:shapes="_x0000_i1030"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1192455168">
+ </o:OLEObject>
+</xml><![endif]-->------</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>標準式</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-justify:
+inter-ideograph;tab-stops:list 54.0pt'><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>同理</span><span lang=EN-US style='color:black'>,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>球心</span><span lang=EN-US style='color:black'>(<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:51pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=68 height=24
+src="./B3-4-3.files/image013.gif" v:shapes="_x0000_i1031"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1192455169">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 54.0pt'><span lang=EN-US style='color:black'><span
+style="mso-spacerun: yes">&nbsp;</span>[</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>隨</span><span lang=EN-US style='color:black'>]1.</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>試問下列哪些點在單位球上</span><span lang=EN-US
+style='color:black'>?ABD<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 54.0pt'><span lang=EN-US style='color:black'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>(A)(1,0,0)<span
+style="mso-spacerun: yes">&nbsp; </span>(B)(0,-1,0)<span style="mso-spacerun:
+yes">&nbsp; </span>(C)(<sub><!--[if gte vml 1]><v:shape id="_x0000_i1032"
+ type="#_x0000_t75" style='width:66pt;height:33pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image014.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=88 height=44
+src="./B3-4-3.files/image015.gif" v:shapes="_x0000_i1032"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1192455170">
+ </o:OLEObject>
+</xml><![endif]-->)<span style="mso-spacerun: yes">&nbsp; </span>(D)(<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:63.75pt;height:33pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image016.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=85 height=44
+src="./B3-4-3.files/image017.gif" v:shapes="_x0000_i1033"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1192455171">
+ </o:OLEObject>
+</xml><![endif]-->)<span style="mso-spacerun: yes">&nbsp; </span>(E)(1,1,1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 54.0pt'><span lang=EN-US style='color:black'><span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span>2.</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>寫出球心在點</span><span lang=EN-US style='color:black'>(1.-2,5),</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>半徑為</span><span lang=EN-US style='color:black'>3</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>的球面方程式</span><span lang=EN-US style='color:black'>?<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 54.0pt'><span lang=EN-US style='color:black'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:156.75pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image018.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=209 height=25
+src="./B3-4-3.files/image019.gif" v:shapes="_x0000_i1034"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1192455172">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 54.0pt'><span lang=EN-US style='color:black'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:list 54.0pt'><span lang=EN-US style='color:black'>[</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>課內討論</span><span lang=EN-US style='color:black'>]</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>點</span><span lang=EN-US style='color:black'>A(2,1,3)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>在球</span><span lang=EN-US style='color:black'>S:<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:132.75pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image020.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=177 height=25
+src="./B3-4-3.files/image021.gif" v:shapes="_x0000_i1035"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1192455173">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>的外部</span><span
+lang=EN-US style='color:black'>,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l2 level1 lfo1;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>從</span><span
+lang=EN-US style='color:black'>A</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>點可以引出多少條直線與球</span><span lang=EN-US style='color:black'>S</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>相切</span><span lang=EN-US style='color:black'>(</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>恰交於一點</span><span lang=EN-US style='color:black'>?</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>無線多條</span><span lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l2 level1 lfo1;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>承</span><span
+lang=EN-US style='color:black'>(1),</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>這些自</span><span lang=EN-US style='color:black'>A</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>點引出的切線</span><span lang=EN-US style='color:black'>,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>可形成何種幾何圖形</span><span lang=EN-US
+style='color:black'>?</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>圓錐</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l2 level1 lfo1;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>承</span><span
+lang=EN-US style='color:black'>(1),</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>這些切點</span><span lang=EN-US style='color:black'>(</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>在球面</span><span lang=EN-US style='color:black'>S</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>上</span><span lang=EN-US style='color:black'>),</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>可形成何種幾何圖形</span><span lang=EN-US
+style='color:black'>?</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>圓</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l2 level1 lfo1;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>如何計算</span><span
+lang=EN-US style='color:black'>A</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>點到球</span><span lang=EN-US style='color:black'>S</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>的切線長</span><span lang=EN-US style='color:black'>?<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:24pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=32 height=23
+src="./B3-4-3.files/image023.gif" v:shapes="_x0000_i1036"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1192455174">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'>[</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>課內討論</span><span lang=EN-US style='color:black'>]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>球</span><span lang=EN-US style='color:black'>S:<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:128.25pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image024.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=171 height=25
+src="./B3-4-3.files/image025.gif" v:shapes="_x0000_i1037"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1192455175">
+ </o:OLEObject>
+</xml><![endif]-->(R=3)</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>被平面</span><span
+lang=EN-US style='color:black'>z=2</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>相割</span><span lang=EN-US style='color:black'>,”</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>截面圓</span><span lang=EN-US style='color:black'>”</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>的方程式如何表示</span><span lang=EN-US
+style='color:black'>?</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>圓心在哪一點</span><span
+lang=EN-US style='color:black'>?</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>半徑是多少</span><span lang=EN-US style='color:black'>?<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>設截面圓心</span><span lang=EN-US style='color:black'>C,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>則</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:20.25pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image026.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=25
+src="./B3-4-3.files/image027.gif" v:shapes="_x0000_i1038"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1192455176">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>是切平面的法線</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-hansi-font-family:"Times New Roman";color:black'>∵<span
+lang=EN-US><sub><!--[if gte vml 1]><v:shape id="_x0000_i1039" type="#_x0000_t75"
+ style='width:9.75pt;height:12.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image028.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=17
+src="./B3-4-3.files/image029.gif" v:shapes="_x0000_i1039"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1192455177">
+ </o:OLEObject>
+</xml><![endif]-->=</span></span><span lang=EN-US style='color:black'>(0,0,1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-hansi-font-family:"Times New Roman";color:black'>∴<span
+lang=EN-US><sub><!--[if gte vml 1]><v:shape id="_x0000_i1040" type="#_x0000_t75"
+ style='width:20.25pt;height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image030.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=27
+src="./B3-4-3.files/image031.gif" v:shapes="_x0000_i1040"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1192455178">
+ </o:OLEObject>
+</xml><![endif]-->參數式</span></span><span lang=EN-US style='color:black'>:
+x=1+0t,y=2+0t,z=0+t<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>令</span><span lang=EN-US style='color:black'>C(1,2,t),t</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>在</span><span lang=EN-US style='color:black'>E:z=2</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>上</span><span lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>得</span><span lang=EN-US style='color:black'>t=2,d=<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" style='width:53.25pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image032.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=71 height=24
+src="./B3-4-3.files/image033.gif" v:shapes="_x0000_i1041"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1192455179">
+ </o:OLEObject>
+</xml><![endif]-->=2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>則圓心</span><span lang=EN-US style='color:black'>C(1,2,2),
+r =<sub><!--[if gte vml 1]><v:shape id="_x0000_i1042" type="#_x0000_t75"
+ style='width:75pt;height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image034.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=100 height=27
+src="./B3-4-3.files/image035.gif" v:shapes="_x0000_i1042"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1192455180">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>截面圓上任一點</span><span lang=EN-US style='color:
+black'>P(x,y,z)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>截面圓的方程式</span><span lang=EN-US style='color:
+black'>:<sub><!--[if gte vml 1]><v:shape id="_x0000_i1043" type="#_x0000_t75"
+ style='width:171.75pt;height:21.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image036.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=229 height=29
+src="./B3-4-3.files/image037.gif" v:shapes="_x0000_i1043"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1192455181">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><sub><!--[if gte vml 1]><v:shape id="_x0000_i1044" type="#_x0000_t75"
+ style='width:105pt;height:18.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image038.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=140 height=25
+src="./B3-4-3.files/image039.gif" v:shapes="_x0000_i1044"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1192455182">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'>[2].</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>直徑式</span><span lang=EN-US style='color:black'>: </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>設</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1045" type="#_x0000_t75" style='width:12.75pt;height:17.25pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image040.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=17 height=23
+src="./B3-4-3.files/image041.gif" v:shapes="_x0000_i1045"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1192455183">
+ </o:OLEObject>
+</xml><![endif]--><sub><!--[if gte vml 1]><v:shape id="_x0000_i1046" type="#_x0000_t75"
+ style='width:117pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image042.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=156 height=23
+src="./B3-4-3.files/image043.gif" v:shapes="_x0000_i1046"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1046"
+  DrawAspect="Content" ObjectID="_1192455184">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>是空間中的兩點</span><span
+lang=EN-US style='color:black'>, </span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>則以</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1047" type="#_x0000_t75" style='width:24.75pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image044.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=33 height=25
+src="./B3-4-3.files/image045.gif" v:shapes="_x0000_i1047"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1192455185">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>為直徑的球面方程式</span><span
+lang=EN-US style='color:black'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp; </span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1048" type="#_x0000_t75" style='width:260.25pt;height:17.25pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image046.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=347 height=23
+src="./B3-4-3.files/image047.gif" v:shapes="_x0000_i1048"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1192455186">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'>[3]. </span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>一般式</span><span lang=EN-US style='color:black'>:<span
+style="mso-spacerun: yes">&nbsp; </span></span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>由標準式</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1049" type="#_x0000_t75" style='width:225pt;height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image048.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=300 height=27
+src="./B3-4-3.files/image049.gif" v:shapes="_x0000_i1049"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1192455187">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span><sub><!--[if gte vml 1]><v:shape id="_x0000_i1050" type="#_x0000_t75"
+ style='width:291pt;height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image050.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=388 height=27
+src="./B3-4-3.files/image051.gif" v:shapes="_x0000_i1050"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1192455188">
+ </o:OLEObject>
+</xml><![endif]-->,or</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>令為</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><sub><!--[if gte vml 1]><v:shape id="_x0000_i1051"
+ type="#_x0000_t75" style='width:168.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image052.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=225 height=24
+src="./B3-4-3.files/image053.gif" v:shapes="_x0000_i1051"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1051"
+  DrawAspect="Content" ObjectID="_1192455189">
+ </o:OLEObject>
+</xml><![endif]-->………</span><span lang=EN-US>(*)</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>稱一般式</span><span lang=EN-US style='color:black'>, </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>配方得</span><span lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:18.0pt;mso-char-indent-count:1.5;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1052"
+ type="#_x0000_t75" style='width:171pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image054.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=228 height=41
+src="./B3-4-3.files/image055.gif" v:shapes="_x0000_i1052"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1052"
+  DrawAspect="Content" ObjectID="_1192455190">
+ </o:OLEObject>
+</xml><![endif]-->(d<sup>2</sup>+e<sup>2+</sup>f<sup>2</sup>-4g), </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>令△</span><span lang=EN-US style='color:black'>=
+d<sup>2</sup>+e<sup>2+</sup>f<sup>2</sup>-4g</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>其圖形可能為</span><span lang=EN-US style='color:black'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>(1) </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>△＞</span><span lang=EN-US
+style='color:black'>0:</span><span lang=EN-US> (*)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>表<span style='color:black'>一個球</span></span><span
+lang=EN-US style='color:black'>(</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>實球</span><span lang=EN-US style='color:black'>),</span><span
+lang=EN-US> </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>球心</span><span lang=EN-US>(-d/2,-e/2,-f/2),</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>半徑</span><span lang=EN-US>r=1/2</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>√<sub>△</sub></span><span lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>(2) </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>△＝</span><span lang=EN-US
+style='color:black'>0:</span><span lang=EN-US> (*)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>表<span style='color:black'>一個點</span></span><span
+lang=EN-US style='color:black'>(</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>點球</span><span lang=EN-US style='color:black'>)</span><span
+lang=EN-US> (-d/2,-e/2,-f/2)<span style='color:black'><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>(3) </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>△＜</span><span lang=EN-US
+style='color:black'>0:</span><span lang=EN-US> (*)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>表<span style='color:black'>沒有圖形</span></span><span
+lang=EN-US style='color:black'>(</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>虛球</span><span lang=EN-US style='color:black'>) </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>或</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>表空集合</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:9.0pt'><span lang=EN-US style='color:
+black'>[4]</span><span lang=EN-US> </span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>過四點的球面方程式</span><span
+lang=EN-US style='color:aqua'>::</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>若</span><span
+lang=EN-US>P<sub>1</sub>(X<sub>1</sub>,Y<sub>1</sub>,Z<sub>1</sub>),P<sub>2</sub>(X<sub>2</sub>,Y<sub>2</sub>,Z<sub>2</sub>),P<sub>3</sub>(X<sub>3</sub>,Y<sub>3</sub>,Z<sub>3</sub>),P<sub>4</sub>(X<sub>4</sub>,Y<sub>4</sub>,Z<sub>4</sub>)</span></p>
+
+<p class=MsoNormal style='margin-left:9.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>為空間中不共面四點，則過此四點的球面方程式為</span></p>
+
+<p class=MsoNormal style='text-indent:48.0pt;mso-char-indent-count:4.0;
+mso-char-indent-size:12.0pt'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>設球面方程式</span><span
+lang=EN-US>:X<sup>2</sup></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>Y<sup>2</sup></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>Z<sup>2</sup></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>dX</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>＋</span><span lang=EN-US>eY</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><span lang=EN-US>fZ</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>g=0, </span></p>
+
+<p class=MsoNormal style='text-indent:48.0pt;mso-char-indent-count:4.0;
+mso-char-indent-size:12.0pt'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>將此四點</span><span
+lang=EN-US>P<sub>1</sub>,P<sub>2</sub>,P<sub>3</sub>,P<sub>4</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>代入得</span><span lang=EN-US>d,e,f,g</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'>[5]</span><span lang=EN-US> </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>點與球面的關係：設空間中的點</span><span lang=EN-US>P(X<sub>1</sub>,Y<sub>1</sub>,Z<sub>1</sub>)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>與</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>球面</span><span lang=EN-US style='color:black'>S:
+<!--[if gte vml 1]><v:shape id="_x0000_i1053" type="#_x0000_t75" style='width:176.25pt;
+ height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=235 height=27
+src="./B3-4-3.files/image056.gif" v:shapes="_x0000_i1053"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1053"
+  DrawAspect="Content" ObjectID="_1192455191">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>球心</span><span
+lang=EN-US style='color:black'>O(<!--[if gte vml 1]><v:shape id="_x0000_i1054"
+ type="#_x0000_t75" style='width:51pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=68 height=24
+src="./B3-4-3.files/image057.gif" v:shapes="_x0000_i1054"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1054"
+  DrawAspect="Content" ObjectID="_1192455192">
+ </o:OLEObject>
+</xml><![endif]-->,</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>半徑</span><span
+lang=EN-US style='color:black'>r,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:12.0pt;mso-char-indent-count:1.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp; </span>1.
+<sub><!--[if gte vml 1]><v:shape id="_x0000_i1055" type="#_x0000_t75" style='width:20.25pt;
+ height:17.25pt' o:ole="" o:bullet="t">
+ <v:imagedata src="./B3-4-3.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=23
+src="./B3-4-3.files/image058.gif" alt="*" v:shapes="_x0000_i1055"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1055"
+  DrawAspect="Content" ObjectID="_1192455193">
+ </o:OLEObject>
+</xml><![endif]-->.&gt; r <sub><!--[if gte vml 1]><v:shape id="_x0000_i1056"
+ type="#_x0000_t75" style='width:17.25pt;height:12pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image059.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=16
+src="./B3-4-3.files/image060.gif" v:shapes="_x0000_i1056"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1056"
+  DrawAspect="Content" ObjectID="_1192455194">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>點</span><span
+lang=EN-US style='color:black'>P</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>在球面的外部，此點到球面的最短距離為</span><span lang=EN-US style='color:black'>(<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1057" type="#_x0000_t75" style='width:20.25pt;height:17.25pt'
+ o:ole="" o:bullet="t">
+ <v:imagedata src="./B3-4-3.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=23
+src="./B3-4-3.files/image061.gif" alt="*" v:shapes="_x0000_i1057"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1057"
+  DrawAspect="Content" ObjectID="_1192455195">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>－</span><span
+lang=EN-US style='color:black'>r)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:12.0pt;mso-char-indent-count:1.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp; </span>2.
+<sub><!--[if gte vml 1]><v:shape id="_x0000_i1058" type="#_x0000_t75" style='width:20.25pt;
+ height:17.25pt' o:ole="" o:bullet="t">
+ <v:imagedata src="./B3-4-3.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=23
+src="./B3-4-3.files/image062.gif" alt="*" v:shapes="_x0000_i1058"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1058"
+  DrawAspect="Content" ObjectID="_1192455196">
+ </o:OLEObject>
+</xml><![endif]-->= r <sub><!--[if gte vml 1]><v:shape id="_x0000_i1059"
+ type="#_x0000_t75" style='width:17.25pt;height:12pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image059.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=16
+src="./B3-4-3.files/image063.gif" v:shapes="_x0000_i1059"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1059"
+  DrawAspect="Content" ObjectID="_1192455197">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>點</span><span
+lang=EN-US style='color:black'>P</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>在球面上，此點到球面的最短距離為</span><span style='color:black'> <span
+lang=EN-US>r<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:12.0pt;mso-char-indent-count:1.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp; </span>3.
+<sub><!--[if gte vml 1]><v:shape id="_x0000_i1060" type="#_x0000_t75" style='width:20.25pt;
+ height:17.25pt' o:ole="" o:bullet="t">
+ <v:imagedata src="./B3-4-3.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=23
+src="./B3-4-3.files/image064.gif" alt="*" v:shapes="_x0000_i1060"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1060"
+  DrawAspect="Content" ObjectID="_1192455198">
+ </o:OLEObject>
+</xml><![endif]-->.&lt; r <sub><!--[if gte vml 1]><v:shape id="_x0000_i1061"
+ type="#_x0000_t75" style='width:17.25pt;height:12pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image059.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=16
+src="./B3-4-3.files/image065.gif" v:shapes="_x0000_i1061"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1061"
+  DrawAspect="Content" ObjectID="_1192455199">
+ </o:OLEObject>
+</xml><![endif]--><sub><!--[if gte vml 1]><v:shape id="_x0000_i1062" type="#_x0000_t75"
+ style='width:17.25pt;height:12pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image059.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=16
+src="./B3-4-3.files/image066.gif" v:shapes="_x0000_i1062"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1062"
+  DrawAspect="Content" ObjectID="_1192455200">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>點</span><span
+lang=EN-US style='color:black'>P</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>在球面的內外部，此點到球面的最短距離為</span><span lang=EN-US style='color:black'>( r</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>－</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1063" type="#_x0000_t75" style='width:20.25pt;height:17.25pt'
+ o:ole="" o:bullet="t">
+ <v:imagedata src="./B3-4-3.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=23
+src="./B3-4-3.files/image067.gif" alt="*" v:shapes="_x0000_i1063"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1063"
+  DrawAspect="Content" ObjectID="_1192455201">
+ </o:OLEObject>
+</xml><![endif]-->)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'>[</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>例</span><span lang=EN-US style='color:black'>]:A(2,1,3),
+B(-4,5,-1),</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>以</span><span lang=EN-US
+style='color:black'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1064" type="#_x0000_t75"
+ style='width:20.25pt;height:15.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image068.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=21
+src="./B3-4-3.files/image069.gif" v:shapes="_x0000_i1064"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1064"
+  DrawAspect="Content" ObjectID="_1192455202">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>為直徑的球面方程式</span><span
+lang=EN-US style='color:black'>?<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>在過直徑</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1065" type="#_x0000_t75" style='width:20.25pt;height:15.75pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image070.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=21
+src="./B3-4-3.files/image071.gif" v:shapes="_x0000_i1065"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1065"
+  DrawAspect="Content" ObjectID="_1192455203">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>的大圓上</span><span
+lang=EN-US style='color:black'>,</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>任取一點</span><span lang=EN-US style='color:black'>P(x,y,z),</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>球心</span><span lang=EN-US style='color:black'>Q=<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1066" type="#_x0000_t75" style='width:2in;height:33.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image072.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=192 height=45
+src="./B3-4-3.files/image073.gif" v:shapes="_x0000_i1066"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1066"
+  DrawAspect="Content" ObjectID="_1192455204">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun: yes">&nbsp;</span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1067" type="#_x0000_t75" style='width:237.75pt;height:30.75pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image074.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=317 height=41
+src="./B3-4-3.files/image075.gif" v:shapes="_x0000_i1067"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1067"
+  DrawAspect="Content" ObjectID="_1192455205">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>由標準式</span><span lang=EN-US style='color:black'>:<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1068" type="#_x0000_t75" style='width:155.25pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image076.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=207 height=25
+src="./B3-4-3.files/image077.gif" v:shapes="_x0000_i1068"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1068"
+  DrawAspect="Content" ObjectID="_1192455206">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'>[</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>隨</span><span lang=EN-US style='color:black'>] </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>此例題之解乘開</span><span lang=EN-US style='color:
+black'>,</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>整理解答</span><span
+lang=EN-US style='color:black'>,</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>是否與</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1069" type="#_x0000_t75" style='width:171pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image078.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=228 height=24
+src="./B3-4-3.files/image079.gif" v:shapes="_x0000_i1069"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1069"
+  DrawAspect="Content" ObjectID="_1192455207">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>相同</span><span
+lang=EN-US style='color:black'>?</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>是</span><span lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(x-2)(x+4)+(y-1)(y-5)+(z-3)(z+1)=0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'>[</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>例</span><span lang=EN-US style='color:black'>]:<sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1070" type="#_x0000_t75" style='width:29.25pt;height:14.25pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image080.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=39 height=19
+src="./B3-4-3.files/image081.gif" v:shapes="_x0000_i1070"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1070"
+  DrawAspect="Content" ObjectID="_1192455208">
+ </o:OLEObject>
+</xml><![endif]-->,</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>試就</span><span
+lang=EN-US style='color:black'>k</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>值討論方程式</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1071" type="#_x0000_t75" style='width:200.25pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image082.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=267 height=24
+src="./B3-4-3.files/image083.gif" v:shapes="_x0000_i1071"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1071"
+  DrawAspect="Content" ObjectID="_1192455209">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>之圖形</span><span
+lang=EN-US style='color:black'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1072"
+ type="#_x0000_t75" style='width:200.25pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image084.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=267 height=24
+src="./B3-4-3.files/image085.gif" v:shapes="_x0000_i1072"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1072"
+  DrawAspect="Content" ObjectID="_1192455210">
+ </o:OLEObject>
+</xml><![endif]--><sub><!--[if gte vml 1]><v:shape id="_x0000_i1073" type="#_x0000_t75"
+ style='width:383.25pt;height:18.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image086.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=511 height=25
+src="./B3-4-3.files/image087.gif" v:shapes="_x0000_i1073"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1073"
+  DrawAspect="Content" ObjectID="_1192455212">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'>(1)<sub><!--[if gte vml 1]><v:shape id="_x0000_i1074"
+ type="#_x0000_t75" style='width:9pt;height:17.25pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image088.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=12 height=23
+src="./B3-4-3.files/image089.gif" v:shapes="_x0000_i1074"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1074"
+  DrawAspect="Content" ObjectID="_1192455213">
+ </o:OLEObject>
+</xml><![endif]-->(k-4)(k+3)</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>＞</span><span
+lang=EN-US style='color:black'>0,k</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>＞</span><span lang=EN-US style='color:black'>4 or k</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>＜</span><span lang=EN-US style='color:black'>-3
+…..</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>實球</span><span lang=EN-US
+style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>球心</span><span
+lang=EN-US style='color:black'>(k,-2,2), <sub><!--[if gte vml 1]><v:shape id="_x0000_i1075"
+ type="#_x0000_t75" style='width:92.25pt;height:20.25pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image090.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=123 height=27
+src="./B3-4-3.files/image091.gif" v:shapes="_x0000_i1075"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1075"
+  DrawAspect="Content" ObjectID="_1192455214">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:25.5pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-25.5pt;mso-list:l0 level1 lfo2;tab-stops:list 25.5pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='color:black'>(k-4)(k+3)=0 , k=4
+or k=-3……</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>點球</span><span lang=EN-US
+style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:25.5pt;text-align:justify;text-justify:
+inter-ideograph'><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>此點為</span><span
+lang=EN-US style='color:black'>(4,-2,2) or (-3,-2,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:25.5pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-25.5pt;mso-list:l0 level1 lfo2;tab-stops:list 25.5pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='color:black'>(k-4)(k+3)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>＜</span><span lang=EN-US style='color:black'>0 ,
+-3</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>＜</span><span lang=EN-US
+style='color:black'>k</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>＜</span><span
+lang=EN-US style='color:black'>-4…….</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>虛球</span><span lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'>[</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>例</span><span lang=EN-US style='color:black'>]:</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>空間中不共平面的四個點</span><span lang=EN-US
+style='color:black'>:A(1,2,2,),B(4,3,-2),C(-2,-1,2),D(5,2,-2),</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>試問是否存在唯一的球通過</span><span lang=EN-US
+style='color:black'>A,B,C,D</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>四個點</span><span
+lang=EN-US style='color:black'>?</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>假如是</span><span lang=EN-US style='color:black'>,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>求球心及</span><span lang=EN-US style='color:black'>R?<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'>sol: </span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>設球的方程式</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1127" type="#_x0000_t75" style='width:168.75pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image092.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=225 height=24
+src="./B3-4-3.files/image093.gif" v:shapes="_x0000_i1127"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1127"
+  DrawAspect="Content" ObjectID="_1192455215">
+ </o:OLEObject>
+</xml><![endif]--> (A,B,C,D</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>代入</span><span
+lang=EN-US style='color:black'>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>a+2b+2c+d=-9……(1)<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='color:black'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>4a+3b-2c+d=-29…..(2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'>-2a-b+2c+d=-9….(3)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'>5a+2b-2c+d=-33…….(4)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'>(1)-(3)<span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span>3(a+b)=0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'>(4)-(2)<span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span>a-b=4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'>a=-2,b=2</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>再代入</span><span lang=EN-US style='color:black'>(1).(2)c=4d=-19<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>則方程式為</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1128" type="#_x0000_t75" style='width:176.25pt;height:18pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image094.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=235 height=24
+src="./B3-4-3.files/image095.gif" v:shapes="_x0000_i1128"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1128"
+  DrawAspect="Content" ObjectID="_1192455216">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1129"
+ type="#_x0000_t75" style='width:155.25pt;height:18.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image096.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=207 height=25
+src="./B3-4-3.files/image097.gif" v:shapes="_x0000_i1129"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1129"
+  DrawAspect="Content" ObjectID="_1192455217">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+text-indent:24.0pt;mso-char-indent-count:2.0;mso-char-indent-size:12.0pt'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>球心</span><span lang=EN-US style='color:black'>(1,-1,-2)
+, R=5<o:p></o:p></span></p>
+
+<div style='border:none;border-bottom:solid windowtext 3.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+border:none;mso-border-bottom-alt:solid windowtext 3.0pt;padding:0cm;
+mso-padding-alt:0cm 0cm 1.0pt 0cm'><span lang=EN-US style='color:black'>[5] </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>點與球面的關係：設空間中的點</span><span lang=EN-US>P<sub>1</sub>(X<sub>1</sub>,Y<sub>1</sub>,Z<sub>1</sub>)<span
+style='color:black'>P()</span></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>與球面</span><span
+lang=EN-US style='color:black'>S:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+border:none;mso-border-bottom-alt:solid windowtext 3.0pt;padding:0cm;
+mso-padding-alt:0cm 0cm 1.0pt 0cm'><span lang=EN-US style='color:black'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+border:none;mso-border-bottom-alt:solid windowtext 3.0pt;padding:0cm;
+mso-padding-alt:0cm 0cm 1.0pt 0cm'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>求方程式</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+border:none;mso-border-bottom-alt:solid windowtext 3.0pt;padding:0cm;
+mso-padding-alt:0cm 0cm 1.0pt 0cm'><span lang=EN-US style='color:black'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+border:none;mso-border-bottom-alt:solid windowtext 3.0pt;padding:0cm;
+mso-padding-alt:0cm 0cm 1.0pt 0cm'><span lang=EN-US style='color:black'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>球與圓性質類比</span><span lang=EN-US style='color:
+black'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>圓</span><span lang=EN-US style='color:black'>(</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>圓心</span><span lang=EN-US style='color:black'>Q,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>半徑</span><span lang=EN-US style='color:black'>r)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l3 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>圓上每一點到圓心都等距</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l3 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>圓上每一點對直徑的張角為直角</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l3 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>切線垂直於過切點的半徑</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l3 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>切線長</span><span
+lang=EN-US style='color:black'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph'><span lang=EN-US style='color:black'>P</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>點到圓的切線長</span><span lang=EN-US style='color:
+black'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph'><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1130" type="#_x0000_t75" style='width:87pt;height:24.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image098.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=116 height=33
+src="./B3-4-3.files/image099.gif" v:shapes="_x0000_i1130"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1130"
+  DrawAspect="Content" ObjectID="_1192455218">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l3 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>不共線的</span><span
+lang=EN-US style='color:black'>3</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>個點決定一個圓</span><span lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l3 level1 lfo4;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>圓幕定理</span><span
+lang=EN-US style='color:black'>:<o:p></o:p></span></p>
+
+<div style='border:none;border-bottom:solid windowtext 3.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;border:none;mso-border-bottom-alt:solid windowtext 3.0pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>過</span><span lang=EN-US style='color:black'>P</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>點引任一條割線與圓交於</span><span lang=EN-US
+style='color:black'>A.B</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>兩點</span><span
+lang=EN-US style='color:black'>,</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>則</span><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1131" type="#_x0000_t75" style='width:137.25pt;height:27.75pt'
+ o:ole="">
+ <v:imagedata src="./B3-4-3.files/image100.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=183 height=37
+src="./B3-4-3.files/image101.gif" v:shapes="_x0000_i1131"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1131"
+  DrawAspect="Content" ObjectID="_1192455219">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;border:none;mso-border-bottom-alt:solid windowtext 3.0pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><span lang=EN-US
+style='color:black'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>球</span><span lang=EN-US style='color:black'>(</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>圓心</span><span lang=EN-US style='color:black'>Q,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>半徑</span><span lang=EN-US style='color:black'>R)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l5 level1 lfo5;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>球上每一點到球心都等距</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l5 level1 lfo5;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>球上每一點對直徑的張角為直角</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l5 level1 lfo5;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>切線垂直於對切角的半徑</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l5 level1 lfo5;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>切線長</span><span
+lang=EN-US style='color:black'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph'><span lang=EN-US style='color:black'>P </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:black'>點到球的切線長</span><span lang=EN-US style='color:
+black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph'><span lang=EN-US style='color:black'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1132" type="#_x0000_t75" style='width:93pt;height:24.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image102.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=124 height=33
+src="./B3-4-3.files/image103.gif" v:shapes="_x0000_i1132"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1132"
+  DrawAspect="Content" ObjectID="_1192455220">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l5 level1 lfo5;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>不共平面的</span><span
+style='color:black'> </span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>點決定一個球</span><span
+lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;mso-list:l5 level1 lfo5;tab-stops:list 18.0pt'><![if !supportLists]><span
+lang=EN-US style='color:black'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>球幕定理</span><span
+lang=EN-US style='color:black'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph'><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>過</span><span lang=EN-US
+style='color:black'>P</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>點引任一割線與球交於</span><span
+lang=EN-US style='color:black'>A.B</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:black'>二點</span><span lang=EN-US style='color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-justify:
+inter-ideograph'><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black'>則</span><span lang=EN-US
+style='color:black'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1133" type="#_x0000_t75"
+ style='width:102pt;height:27.75pt' o:ole="">
+ <v:imagedata src="./B3-4-3.files/image104.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=136 height=37
+src="./B3-4-3.files/image105.gif" v:shapes="_x0000_i1133"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1133"
+  DrawAspect="Content" ObjectID="_1192455221">
+ </o:OLEObject>
+</xml><![endif]-->,(A.B.Q</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:black'>決定一個球上的大圓</span><span
+lang=EN-US style='color:black'>)<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

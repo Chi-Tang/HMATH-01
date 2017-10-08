@@ -1,0 +1,684 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./B1-0-3.files/filelist.xml">
+<link rel=Edit-Time-Data href="./B1-0-3.files/editdata.mso">
+<link rel=OLE-Object-Data href="./B1-0-3.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title> §1-3 集合的運算 </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>andy</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>User</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:LastPrinted>1995-12-31T17:01:00Z</o:LastPrinted>
+  <o:Created>2007-08-16T08:11:00Z</o:Created>
+  <o:LastSaved>2007-08-16T08:11:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>184</o:Words>
+  <o:Characters>1053</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>8</o:Lines>
+  <o:Paragraphs>2</o:Paragraphs>
+  <o:CharactersWithSpaces>1293</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:PunctuationKerning/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:新細明體;
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-alt:PMingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"華康少女文字W7\(P\)";
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:136;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 134742016 16 0 1048576 0;}
+@font-face
+	{font-family:標楷體;
+	panose-1:3 0 5 9 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:script;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@標楷體";
+	panose-1:3 0 5 9 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:script;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Lucida Handwriting";
+	mso-font-alt:"Courier New";
+	mso-font-charset:0;
+	mso-generic-font-family:script;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"\@華康少女文字W7\(P\)";
+	mso-font-charset:136;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 134742016 16 0 1048576 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:新細明體;
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:18.0pt 90.0pt 72.0pt 36.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:956907126;
+	mso-list-type:simple;
+	mso-list-template-ids:-694751574;}
+@list l0:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:48.75pt;
+	mso-level-number-position:left;
+	margin-left:48.75pt;
+	text-indent:-30.75pt;
+	font-family:新細明體;
+	mso-ascii-font-family:"Bookman Old Style";
+	mso-hansi-font-family:"Bookman Old Style";
+	color:windowtext;}
+@list l1
+	{mso-list-id:2096240712;
+	mso-list-type:simple;
+	mso-list-template-ids:-2007969290;}
+@list l1:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:48.75pt;
+	mso-level-number-position:left;
+	margin-left:48.75pt;
+	text-indent:-30.75pt;
+	font-family:新細明體;
+	mso-ascii-font-family:"Bookman Old Style";
+	mso-hansi-font-family:"Bookman Old Style";
+	color:black;}
+ol
+	{margin-bottom:0pt;}
+ul
+	{margin-bottom:0pt;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1071"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-TW style='tab-interval:24.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:24.0pt;mso-bidi-font-size:
+10.0pt;font-family:"華康少女文字W7\(P\)";color:maroon'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>§0</span><span lang=EN-US
+style='font-size:24.0pt;mso-bidi-font-size:10.0pt;font-family:"Lucida Handwriting";
+mso-fareast-font-family:"華康少女文字W7\(P\)";color:maroon'>-3</span><span
+lang=EN-US style='font-size:24.0pt;mso-bidi-font-size:10.0pt;font-family:"華康少女文字W7\(P\)";
+color:maroon'><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>集合的運算
+<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Bookman Old Style";mso-fareast-font-family:"華康少女文字W7\(P\)";
+color:gray'>[1]</span><span lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:
+10.0pt;font-family:"華康少女文字W7\(P\)";color:gray'> 聯集與交集<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:48.75pt;text-indent:-30.75pt;mso-list:
+l1 level1 lfo2;tab-stops:list 48.75pt'><![if !supportLists]><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:"Bookman Old Style";
+color:black'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-hansi-font-family:"Times New Roman";color:black'>聯集定義<span
+lang=EN-US>:</span></span><span style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";color:navy'>由兩個集合<span
+lang=EN-US>A與B的〝所有元素〞<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:black'><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span></span><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-hansi-font-family:"Times New Roman";color:navy'>所組成的集合<span
+lang=EN-US>,稱為A與B的聯集,記為<sub><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:36.75pt;
+ height:13.5pt' o:ole="" filled="t" fillcolor="#c9f">
+ <v:imagedata src="./B1-0-3.files/image001.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1248785843">
+ </o:OLEObject>
+</xml><![endif]-->,<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:navy'><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>即<sub><v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:167.25pt;
+ height:25.5pt' o:ole="" filled="t" fillcolor="#c9f">
+ <v:imagedata src="./B1-0-3.files/image002.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1248785844">
+ </o:OLEObject>
+</xml><![endif]-->.<span style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+mso-char-indent-size:12.0pt;tab-stops:121.5pt;mso-char-indent-size:12pt'><span
+lang=EN-US><v:shape id="_x0000_i1027" type="#_x0000_t75" style='width:102.75pt;
+ height:79.5pt' o:ole="">
+ <v:imagedata src="./B1-0-3.files/image003.png" o:title=""/>
+</v:shape><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1248785845">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp; </span><v:shape id="_x0000_i1028"
+ type="#_x0000_t75" style='width:105pt;height:82.5pt' o:ole="">
+ <v:imagedata src="./B1-0-3.files/image004.png" o:title=""/>
+</v:shape><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1248785846">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+
+<p class=MsoNormal style='margin-left:48.75pt;text-indent:-30.75pt;mso-list:
+l1 level1 lfo2;tab-stops:list 48.75pt'><![if !supportLists]><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:"Bookman Old Style";
+color:black'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-hansi-font-family:"Times New Roman"'>交集定義<span lang=EN-US>:<span
+style='color:navy'>由兩個集合A與B的〝共同元素〞<o:p></o:p></span></span></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:navy'><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>所組成的集合,稱為A與B的交集,記為<sub><v:shape id="_x0000_i1029" type="#_x0000_t75"
+ style='width:36.75pt;height:14.25pt' o:ole="" filled="t" fillcolor="#c9f">
+ <v:imagedata src="./B1-0-3.files/image005.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1248785847">
+ </o:OLEObject>
+</xml><![endif]-->,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:navy'><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>即<sub><v:shape id="_x0000_i1030" type="#_x0000_t75" style='width:167.25pt;
+ height:26.25pt' o:ole="" filled="t" fillcolor="#c9f">
+ <v:imagedata src="./B1-0-3.files/image006.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1248785848">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";color:navy'><span
+style="mso-spacerun: yes">&nbsp;</span></span><span lang=EN-US
+style='font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:navy'><span style="mso-spacerun: yes">&nbsp;</span></span><span
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:"華康少女文字W7\(P\)";
+color:purple'>公式<span lang=EN-US>:<sub><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:223.5pt;height:21.75pt' o:ole="" filled="t" fillcolor="#f90">
+ <v:imagedata src="./B1-0-3.files/image007.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1248785849">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:"華康少女文字W7\(P\)";color:purple'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><sub><v:shape id="_x0000_i1032"
+ type="#_x0000_t75" style='width:225pt;height:22.5pt' o:ole="" filled="t"
+ fillcolor="#f90">
+ <v:imagedata src="./B1-0-3.files/image008.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1248785850">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:28.5pt'><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:black'><span style="mso-spacerun: yes">&nbsp;</span>[<b
+style='mso-bidi-font-weight:normal'>例</b>]</span><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:"華康少女文字W7\(P\)";
+color:maroon'> <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;color:maroon'><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-hansi-font-family:"Times New Roman";color:black'>設<span
+lang=EN-US>A={1,2,4,7}，B={2,3,4,7,9}，求<sub><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:33.75pt;height:12.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image009.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1248785851">
+ </o:OLEObject>
+</xml><![endif]-->與<sub><v:shape id="_x0000_i1034" type="#_x0000_t75" style='width:33.75pt;
+ height:12.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image010.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1248785852">
+ </o:OLEObject>
+</xml><![endif]-->。<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";color:navy'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span><span lang=EN-US
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:black'><span style="mso-spacerun: yes">&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>答:</i></b></span><sub><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;
+mso-hansi-font-family:"Times New Roman";color:navy'><v:shape id="_x0000_i1035"
+ type="#_x0000_t75" style='width:33.75pt;height:12.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image009.wmz" o:title=""/>
+</v:shape></span></sub><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";
+color:black'><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1248785853">
+ </o:OLEObject>
+</xml><![endif]--></span></i></b><span lang=EN-US style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";
+color:navy'>={2,4,7}，<sub><v:shape id="_x0000_i1036" type="#_x0000_t75"
+ style='width:33.75pt;height:12.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image010.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1248785854">
+ </o:OLEObject>
+</xml><![endif]-->={1,2,3,4,7,9}</span><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";
+color:black'>。</span><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";color:navy'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Bookman Old Style";color:gray'>[2]</span><span lang=EN-US
+style='font-size:18.0pt;mso-bidi-font-size:10.0pt'> </span><span
+style='font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:"華康少女文字W7\(P\)";
+mso-ascii-font-family:"Times New Roman";color:gray'>差集與補集</span><span
+lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:48.75pt;text-indent:-30.75pt;mso-list:
+l0 level1 lfo4;tab-stops:list 48.75pt'><![if !supportLists]><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:"Bookman Old Style"'>(1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-hansi-font-family:"Times New Roman"'>差集定義<span lang=EN-US>:<span
+style='color:navy'>由屬於A但不屬於B的元素所組成<o:p></o:p></span></span></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:navy'><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>的集合,記為公式:<sub><v:shape id="_x0000_i1037" type="#_x0000_t75" style='width:45pt;
+ height:18pt' o:ole="" filled="t" fillcolor="#c9f">
+ <v:imagedata src="./B1-0-3.files/image011.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1248785855">
+ </o:OLEObject>
+</xml><![endif]-->,稱A與B的差集,即<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:navy'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span><sub><v:shape id="_x0000_i1038" type="#_x0000_t75"
+ style='width:189pt;height:27pt' o:ole="" filled="t" fillcolor="#c9f">
+ <v:imagedata src="./B1-0-3.files/image012.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1248785856">
+ </o:OLEObject>
+</xml><![endif]-->.<span style="mso-spacerun: yes">&nbsp; </span></span><span
+lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span lang=EN-US
+style='font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:navy'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Bookman Old Style"'><span style="mso-spacerun: yes">&nbsp;
+</span>(2)</span><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt'> </span><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;
+font-family:標楷體;mso-hansi-font-family:"Times New Roman"'>補集<span lang=EN-US>(餘集)定義:<span
+style='color:navy'>所有討論的集合都是某一集<o:p></o:p></span></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";color:navy'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>合U的子集時,稱U為</span><span
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:red'>宇集</span><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";
+color:navy'>,而U為其任一子集<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";color:navy'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>A之差集U-A則稱為A在U中的補集以</span><span
+lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;
+mso-hansi-font-family:"Times New Roman";color:teal'>A`</span><span
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:
+"Times New Roman";color:navy'>表示<span lang=EN-US>.<span style="mso-spacerun:
+yes">&nbsp; </span></span></span><span lang=EN-US style='font-size:18.0pt;
+mso-bidi-font-size:10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman";
+color:navy'><span style="mso-spacerun: yes">&nbsp;&nbsp;</span></span><span
+lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Bookman Old Style";color:gray'><span style="mso-spacerun:
+yes">&nbsp; </span></span><span style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:"華康少女文字W7\(P\)";color:purple'>公式<span lang=EN-US>:</span></span><sub><span
+lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:"華康少女文字W7\(P\)";
+color:purple'><v:shape id="_x0000_i1039" type="#_x0000_t75" style='width:186.75pt;
+ height:22.5pt' o:ole="" filled="t" fillcolor="#f90">
+ <v:imagedata src="./B1-0-3.files/image013.wmz" o:title=""/>
+</v:shape></span></sub><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:"華康少女文字W7\(P\)";color:purple'><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1248785857">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:
+10.0pt;font-family:"華康少女文字W7\(P\)";color:purple'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:
+10.0pt;font-family:"華康少女文字W7\(P\)";color:purple'><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><sub><v:shape id="_x0000_i1040"
+ type="#_x0000_t75" style='width:189pt;height:24pt' o:ole="" filled="t"
+ fillcolor="#f90">
+ <v:imagedata src="./B1-0-3.files/image014.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1248785858">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:20.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Bookman Old Style";color:gray'><span style="mso-spacerun:
+yes">&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+mso-char-indent-size:12.0pt;mso-char-indent-size:12pt'><span lang=EN-US><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" style='width:103.5pt;height:80.25pt'
+ o:ole="">
+ <v:imagedata src="./B1-0-3.files/image015.png" o:title=""/>
+</v:shape><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1248785859">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp;&nbsp; </span><v:shape
+ id="_x0000_i1042" type="#_x0000_t75" style='width:103.5pt;height:80.25pt'
+ o:ole="">
+ <v:imagedata src="./B1-0-3.files/image016.png" o:title=""/>
+</v:shape><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1248785860">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp;</span><v:shape id="_x0000_i1043"
+ type="#_x0000_t75" style='width:103.5pt;height:80.25pt' o:ole="">
+ <v:imagedata src="./B1-0-3.files/image017.png" o:title=""/>
+</v:shape><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1248785861">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;mso-char-indent-count:2.0;
+mso-char-indent-size:18.0pt;mso-char-indent-size:18pt'><span lang=EN-US
+style='font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:"Bookman Old Style";
+color:gray'>[3]</span><span lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:
+10.0pt'> </span><span style='font-size:18.0pt;mso-bidi-font-size:10.0pt;
+font-family:"華康少女文字W7\(P\)";mso-ascii-font-family:"Times New Roman";color:maroon'>狄莫根定律</span><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><sub><v:shape id="_x0000_i1044" type="#_x0000_t75"
+ style='width:106.5pt;height:21pt' o:ole="" filled="t" fillcolor="#3cc">
+ <v:imagedata src="./B1-0-3.files/image018.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1248785862">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><sub><v:shape id="_x0000_i1045"
+ type="#_x0000_t75" style='width:111pt;height:21.75pt' o:ole="" filled="t"
+ fillcolor="#3cc">
+ <v:imagedata src="./B1-0-3.files/image019.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1248785863">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt'><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:"華康少女文字W7\(P\)";
+color:maroon'><span style="mso-spacerun: yes">&nbsp;</span></span><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+標楷體;color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Bookman Old Style";color:gray'><span style="mso-spacerun:
+yes">&nbsp;</span>[4]</span><span lang=EN-US style='font-size:18.0pt;
+mso-bidi-font-size:10.0pt'> </span><span style='font-size:18.0pt;mso-bidi-font-size:
+10.0pt;font-family:"華康少女文字W7\(P\)";color:gray'>聯<span lang=EN-US>(交)集對交(聯)集 有分配律</span></span><span
+lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><sub><v:shape
+ id="_x0000_i1046" type="#_x0000_t75" style='width:195pt;height:21.75pt' o:ole=""
+ filled="t" fillcolor="#c9f">
+ <v:imagedata src="./B1-0-3.files/image020.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1046"
+  DrawAspect="Content" ObjectID="_1248785864">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-indent:33.0pt'><span lang=EN-US
+style='font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:"華康少女文字W7\(P\)";
+color:purple'><span style="mso-spacerun: yes">&nbsp;&nbsp; </span><sub><v:shape
+ id="_x0000_i1047" type="#_x0000_t75" style='width:192pt;height:22.5pt' o:ole=""
+ filled="t" fillcolor="#c9f">
+ <v:imagedata src="./B1-0-3.files/image021.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1248785865">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt;font-family:"華康少女文字W7\(P\)";color:purple'><span style="mso-spacerun:
+yes">&nbsp; </span>公式:<o:p></o:p></span></p>
+
+<p class=MsoNormal><sub><span lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:
+10.0pt;font-family:"華康少女文字W7\(P\)";color:purple'><v:shape id="_x0000_i1048"
+ type="#_x0000_t75" style='width:396pt;height:24.75pt' o:ole="" filled="t"
+ fillcolor="#f90">
+ <v:imagedata src="./B1-0-3.files/image022.wmz" o:title=""/>
+</v:shape><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1248785866">
+ </o:OLEObject>
+</xml><![endif]--></span></sub><span lang=EN-US style='font-size:18.0pt;
+mso-bidi-font-size:10.0pt;font-family:"華康少女文字W7\(P\)";color:purple'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Bookman Old Style";color:gray'>[5]</span><span lang=EN-US
+style='font-size:18.0pt;mso-bidi-font-size:10.0pt;color:gray'> </span><span
+style='font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:"華康少女文字W7\(P\)";
+color:gray'>差集對交集<span lang=EN-US>(聯集) 有分配律</span></span><span lang=EN-US
+style='font-size:18.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><sub><v:shape
+ id="_x0000_i1049" type="#_x0000_t75" style='width:204pt;height:24pt' o:ole=""
+ filled="t" fillcolor="#c9f">
+ <v:imagedata src="./B1-0-3.files/image023.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1248785867">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><sub><v:shape
+ id="_x0000_i1050" type="#_x0000_t75" style='width:204pt;height:21.75pt' o:ole=""
+ filled="t" fillcolor="#c9f">
+ <v:imagedata src="./B1-0-3.files/image024.wmz" o:title=""/>
+</v:shape></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1248785868">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman"'>[例]設A={1,2,3,4,5}，B={2,3,4,6,7}，C={1,2,4,5,6}，求A－(B<sub><v:shape
+ id="_x0000_i1051" type="#_x0000_t75" style='width:12pt;height:15pt'
+ fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image025.wmz" o:title=""/>
+</v:shape></sub>C)，(<sub><v:shape id="_x0000_i1052" type="#_x0000_t75" style='width:33pt;
+ height:15pt' fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image026.wmz" o:title=""/>
+</v:shape></sub>)<sub><v:shape id="_x0000_i1053" type="#_x0000_t75" style='width:12pt;
+ height:15pt' fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image027.wmz" o:title=""/>
+</v:shape></sub>C與(A－C)<sub><v:shape id="_x0000_i1054" type="#_x0000_t75"
+ style='width:12pt;height:15pt' fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image027.wmz" o:title=""/>
+</v:shape></sub>B。<span style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:標楷體;mso-hansi-font-family:"Times New Roman"'><span
+style="mso-spacerun: yes">&nbsp;</span><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='color:red'>答：</span></i></b><span
+style='color:black'>A－(B<sub><v:shape id="_x0000_i1055" type="#_x0000_t75"
+ style='width:12pt;height:15pt' fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image025.wmz" o:title=""/>
+</v:shape></sub>C)=</span> <span style='color:navy'>φ；</span><span
+style='color:black'>(<sub><v:shape id="_x0000_i1056" type="#_x0000_t75"
+ style='width:33pt;height:15pt' fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image026.wmz" o:title=""/>
+</v:shape></sub>)<sub><v:shape id="_x0000_i1057" type="#_x0000_t75" style='width:12pt;
+ height:15pt' fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image027.wmz" o:title=""/>
+</v:shape></sub>C=</span><span style='color:navy'>{1,2,4,5,6}；</span><span
+style='color:black'>(A－C)<sub><v:shape id="_x0000_i1058" type="#_x0000_t75"
+ style='width:12pt;height:15pt' fillcolor="window">
+ <v:imagedata src="./B1-0-3.files/image027.wmz" o:title=""/>
+</v:shape></sub>B=</span><span style='color:navy'>{3}。</span><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

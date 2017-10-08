@@ -1,0 +1,1872 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./B1-3-01.files/filelist.xml">
+<link rel=Edit-Time-Data href="./B1-3-01.files/editdata.mso">
+<link rel=OLE-Object-Data href="./B1-3-01.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>第４章　多項式</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>SHU</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>User</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>6</o:TotalTime>
+  <o:Created>2007-08-16T09:07:00Z</o:Created>
+  <o:LastSaved>2007-08-16T09:07:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>645</o:Words>
+  <o:Characters>3681</o:Characters>
+  <o:Company>FCSH</o:Company>
+  <o:Lines>30</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>4520</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:新細明體;
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-alt:PMingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:新細明體;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:34.0pt 89.85pt 72.0pt 79.4pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:305162941;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2092138674 1539098508 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:31.5pt;
+	mso-level-number-position:left;
+	margin-left:31.5pt;
+	text-indent:-19.5pt;}
+@list l1
+	{mso-list-id:311711976;
+	mso-list-template-ids:-1264431164;}
+@list l1:level1
+	{mso-level-start-at:4;
+	mso-level-text:%1;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l1:level2
+	{mso-level-text:"\(%2\)";
+	mso-level-tab-stop:42.0pt;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:511843114;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2118181834 -1 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l2:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:30.0pt;
+	mso-level-number-position:left;
+	margin-left:30.0pt;
+	text-indent:-18.0pt;
+	mso-ascii-font-family:新細明體;}
+@list l3
+	{mso-list-id:535044692;
+	mso-list-template-ids:1557046252;}
+@list l3:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:42.0pt;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:648365558;
+	mso-list-template-ids:1778141362;}
+@list l4:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l4:level2
+	{mso-level-text:"\(%2\)";
+	mso-level-tab-stop:42.0pt;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-18.0pt;}
+@list l5
+	{mso-list-id:733043366;
+	mso-list-template-ids:-681413046;}
+@list l5:level1
+	{mso-level-start-at:4;
+	mso-level-text:%1;
+	mso-level-tab-stop:28.5pt;
+	mso-level-number-position:left;
+	margin-left:28.5pt;
+	text-indent:-28.5pt;}
+@list l5:level2
+	{mso-level-text:%1-%2;
+	mso-level-tab-stop:28.5pt;
+	mso-level-number-position:left;
+	margin-left:28.5pt;
+	text-indent:-28.5pt;}
+@list l5:level3
+	{mso-level-text:"%1-%2\.%3";
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	margin-left:36.0pt;
+	text-indent:-36.0pt;}
+@list l5:level4
+	{mso-level-text:"%1-%2\.%3\.%4";
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	margin-left:36.0pt;
+	text-indent:-36.0pt;}
+@list l5:level5
+	{mso-level-text:"%1-%2\.%3\.%4\.%5";
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-54.0pt;}
+@list l5:level6
+	{mso-level-text:"%1-%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-54.0pt;}
+@list l5:level7
+	{mso-level-text:"%1-%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-72.0pt;}
+@list l5:level8
+	{mso-level-text:"%1-%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-72.0pt;}
+@list l5:level9
+	{mso-level-text:"%1-%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:90.0pt;
+	mso-level-number-position:left;
+	margin-left:90.0pt;
+	text-indent:-90.0pt;}
+@list l6
+	{mso-list-id:806165613;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-421868504 -1 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l6:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:30.0pt;
+	mso-level-number-position:left;
+	margin-left:30.0pt;
+	text-indent:-18.0pt;}
+@list l7
+	{mso-list-id:1250771814;
+	mso-list-template-ids:-2131753376;}
+@list l7:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:42.0pt;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-18.0pt;}
+@list l8
+	{mso-list-id:1315909353;
+	mso-list-type:hybrid;
+	mso-list-template-ids:583583000 -1 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l8:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:30.0pt;
+	mso-level-number-position:left;
+	margin-left:30.0pt;
+	text-indent:-18.0pt;}
+@list l9
+	{mso-list-id:1421557614;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-255970826 -1 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l9:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l9:level2
+	{mso-level-tab-stop:42.0pt;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-18.0pt;}
+@list l10
+	{mso-list-id:1643921999;
+	mso-list-template-ids:713859706;}
+@list l10:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0pt;}
+ul
+	{margin-bottom:0pt;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-TW link=blue vlink=purple style='tab-interval:24.0pt;text-justify-trim:
+punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:right dotted 408.25pt;
+mso-line-break-override:restrictions'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>第</span><span
+lang=EN-US>3</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>章　多項式</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:right dotted 408.25pt;
+mso-line-break-override:restrictions'><span lang=EN-US>3-1</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>多項式的四則運算</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;</span>[1]</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>多項式定義</span><span
+lang=EN-US>: </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>：</span></p>
+
+<p class=MsoNormal><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>設形如</span><span lang=EN-US>P(x)=a<sub>n</sub>
+x<sup>n</sup></span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>＋</span><span lang=EN-US>a<sub>n-1</sub>
+x<sup>n-1</sup></span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>＋</span><span lang=EN-US>…+a<sub>1</sub>x+a<sub>0</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的式子</span><span lang=EN-US>,</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>而</span><span
+lang=EN-US>n<sub><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:9.75pt;
+ height:9.75pt' o:ole="">
+ <v:imagedata src="./B1-3-01.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=13
+src="./B1-3-01.files/image002.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1248789185">
+ </o:OLEObject>
+</xml><![endif]--> N</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>∪</span><span
+lang=EN-US>{0},</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>稱</span><span lang=EN-US>x</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的多項式</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-18.0pt;mso-list:l9 level2 lfo2;
+tab-stops:list 42.0pt'><![if !supportLists]><span lang=EN-US>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>當</span><span lang=EN-US>a<sub>n</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>≠</span><span lang=EN-US>0</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>時</span><span
+lang=EN-US>,</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>則</span><span lang=EN-US>n</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>稱為多項式</span><span lang=EN-US>P(x) </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的次數</span><span lang=EN-US>,</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>以</span><span
+lang=EN-US>deg p(x)</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US>n,</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>且稱</span><span lang=EN-US>a<sub>n</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>為領導係數</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-18.0pt;mso-list:l9 level2 lfo2;
+tab-stops:list 42.0pt'><![if !supportLists]><span lang=EN-US>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>設</span><span lang=EN-US>a<sub>n</sub>,a<sub>n-1</sub>,…a<sub>1</sub>,a<sub>0</sub><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:9.75pt;height:9.75pt' o:ole="">
+ <v:imagedata src="./B1-3-01.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=13
+src="./B1-3-01.files/image003.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1248789186">
+ </o:OLEObject>
+</xml><![endif]-->R,</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>則</span><span
+lang=EN-US>p(x)<sub><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:9.75pt;height:9.75pt' o:ole="">
+ <v:imagedata src="./B1-3-01.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=13
+src="./B1-3-01.files/image004.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1248789187">
+ </o:OLEObject>
+</xml><![endif]-->R[x] </span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為實係數多項式</span><span
+lang=EN-US>,</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>其中</span><span lang=EN-US>a<sub>k</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>稱</span><span lang=EN-US>x<sup>k</sup> </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的係數</span><span lang=EN-US>[</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>繫數</span><span
+lang=EN-US>]</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-18.0pt;mso-list:l9 level2 lfo2;
+tab-stops:list 42.0pt'><![if !supportLists]><span lang=EN-US>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>設</span><span lang=EN-US>a<sub>n</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>a<sub>n-1</sub>=……..</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>a<sub>1</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>0,</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>但</span><span
+lang=EN-US>a<sub>0</sub></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>≠</span><span
+lang=EN-US>0,</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>則</span><span lang=EN-US>p(x)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>0+a<sub>0</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>a<sub>0</sub>{1</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>x<sup>0</sup>},</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>稱為</span><span lang=EN-US>0</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>次多項式</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-18.0pt;mso-list:l9 level2 lfo2;
+tab-stops:list 42.0pt'><![if !supportLists]><span lang=EN-US>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>設</span><span lang=EN-US>a<sub>n</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>a<sub>n-1</sub>=……..</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>a<sub>1</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>a<sub>0</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>0,</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>則</span><span
+lang=EN-US>p(x)</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>＝</span><span lang=EN-US>0{</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>稱為</span><span lang=EN-US>0</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>多項式</span><span
+lang=EN-US>}</span></p>
+
+<p class=MsoNormal><span lang=EN-US>[</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>註</span><span
+lang=EN-US>]:</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>常數多項式</span><span lang=EN-US>:</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>零次多項式</span><span lang=EN-US>a<sub>0</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>≠</span><span lang=EN-US>0</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的常數</span><span
+lang=EN-US>, </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>及零多項式</span><span lang=EN-US>a<sub>0 </sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US>0</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;</span>[</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>例</span><span
+lang=EN-US>]: f(x)</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>屬於</span><span
+lang=EN-US>z[x]</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>整係數</span> <span lang=EN-US>,f(x)=a</span><span
+lang=EN-US style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>x<sup>4</sup>+</span><span
+lang=EN-US>bx</span><span style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>&sup3;</span><span
+lang=EN-US>+cx</span><span style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>&sup2;</span><span
+lang=EN-US>+dx+e,</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>且</span><span
+lang=EN-US>2</span><span lang=EN-US style='font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>|</span><span lang=EN-US>a</span><span lang=EN-US
+style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>|+3|</span><span
+lang=EN-US>b+1</span><span lang=EN-US style='font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>|+|c-2|=1</span><span lang=EN-US>,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>求</span><span lang=EN-US>deg f(x)?</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>sol:2</span><span lang=EN-US
+style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>|a|+3|b+1|+|c-2|=1<span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span>,∴a=0,b=-1,c=3or1∴ 為三次數<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>[2]多項式的相等<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo3;
+tab-stops:list 30.0pt'><![if !supportLists]><span lang=EN-US style='font-family:
+新細明體;mso-hansi-font-family:"Times New Roman"'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>設</span><span lang=EN-US>f(x)=a<sub>n</sub> x<sup>n</sup>+a<sub>n-1</sub>
+x<sup>n-1</sup>+…+a<sub>1</sub>x+a<sub>0 </sub></span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>a<sub>n</sub></span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>≠</span><span
+lang=EN-US>0</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>）</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>g(x)=b<sub>m</sub>x<sup>m</sup>+b<sub>m-1</sub>
+x<sup>m-1</sup>+…+b<sub>1</sub>x+b<sub>0 </sub></span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>b<sub>m</sub></span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>≠</span><span
+lang=EN-US>0</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>），</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>若</span><span
+lang=EN-US>f(x)=g(x),</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>則須</span><span
+lang=EN-US>n=m</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>且</span><span lang=EN-US>a<sub>n</sub>=b<sub>m</sub>,a<sub>n-1</sub>=b<sub>m-1</sub>,……,a<sub>1</sub>=b<sub>1</sub>,a<sub>0</sub>=b<sub>0</sub></span><span
+lang=EN-US style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'> ~<b
+style='mso-bidi-font-weight:normal'>共</b></span><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US>n+1</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>個相等</span><u><span lang=EN-US><o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo3;
+tab-stops:list 30.0pt'><![if !supportLists]><span lang=EN-US style='font-family:
+新細明體;mso-hansi-font-family:"Times New Roman"'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><![endif]><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>設</span><span
+lang=EN-US>f(x),g(x)</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為</span><span
+lang=EN-US>n</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>次多項式</span><span lang=EN-US>,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>若有</span><span lang=EN-US>(n+1)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>個以上相異實數α</span><sub><span lang=EN-US>i</span></sub><span
+lang=EN-US>,i</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>＝</span><span lang=EN-US>1,2,,…,n+1,…,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>使得</span></p>
+
+<p class=MsoNormal style='margin-left:1.0gd;text-indent:24.0pt;mso-char-indent-count:
+2.0;mso-char-indent-size:12.0pt'><span lang=EN-US>f(</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>α</span><sub><span lang=EN-US>i</span></sub><span
+lang=EN-US>)=g(</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>α</span><sub><span lang=EN-US>i</span></sub><span
+lang=EN-US> ),</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>則</span><span lang=EN-US>f(x)=g(x)</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>[</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>例</span><span lang=EN-US>]:</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>設</span><span
+lang=EN-US>abc</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>屬於</span><span lang=EN-US>R</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>且</span><span lang=EN-US>f(x)=(a-2)x</span><span
+style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>&sup2;</span><span
+lang=EN-US>+(b+3)x+c,</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>滿足</span><span
+lang=EN-US>f(0)=f(1)=f(2)=1,</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>求</span><span
+lang=EN-US>a+b+c?</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>sol:</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>∵二次式有</span><span lang=EN-US>3</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>個相等值</span><span
+lang=EN-US>,</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>即</span><span lang=EN-US>f(x)=1<span
+style="mso-spacerun: yes">&nbsp; </span>,</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>∴</span><span
+lang=EN-US>(a-2)x</span><span style='font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>&sup2;</span><span lang=EN-US>+(b+3)x+c=1</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>∴</span><span lang=EN-US>a-2=0<span
+style="mso-spacerun: yes">&nbsp; </span>a=2,b+3=0<span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span>b=-3,c=1<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>∴</span><span
+lang=EN-US>a+b+c=0</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>[3]</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>多項數係數關係</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>設</span><span
+lang=EN-US>p(x)= a<sub>n</sub> x<sup>n</sup></span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>a<sub>n-1</sub> x<sup>n-1</sup></span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>…+a<sub>1</sub>x+a<sub>0 ,</sub>(a<sub>n</sub></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>≠</span><span lang=EN-US>0)</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-19.5pt;mso-list:l0 level1 lfo11;
+tab-stops:list 31.5pt'><![if !supportLists]><span lang=EN-US>(1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>常數項</span><b style='mso-bidi-font-weight:normal'><u><span
+lang=EN-US>a</span></u></b><sub><span lang=EN-US>0=</span></sub><b
+style='mso-bidi-font-weight:normal'><u><span lang=EN-US>p(0)</span></u></b><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp; </span></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>(2)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>各項係數和</span><span lang=EN-US>:a<sub>n</sub>+a<sub>n-1</sub>+…+a<sub>1</sub>+a<sub>0</sub>=<b
+style='mso-bidi-font-weight:normal'><u>p(1)</u></b></span></p>
+
+<p class=MsoNormal><span lang=EN-US>(3).</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>偶次項係數和</span><span
+lang=EN-US>:a<sub>n</sub>+a<sub>n-2</sub>+…+a<sub>2</sub>+a<sub>0</sub>=<b
+style='mso-bidi-font-weight:normal'><u>1/2[p(1)+p(-1)]<o:p></o:p></u></b></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>(4)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>奇次項係數和</span><span lang=EN-US>:a<sub>n-1</sub>+a<sub>n-3</sub>+…+a<sub>3</sub>+a<sub>1</sub>=<b
+style='mso-bidi-font-weight:normal'><u>1/2[p(1)-p(-1)]</u></b></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:blue'>證明</span><span lang=EN-US style='color:blue'>: </span><span
+lang=EN-US>p(x)=an x</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的</span><span
+lang=EN-US>n</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>次方</span><span lang=EN-US>+an-1 x</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的</span><span lang=EN-US>n-1</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>次方</span><span
+lang=EN-US>+…+a1 x+a0</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>p(1)=an+an-1+…+a1+a0</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;</span>p(-1)=an-an-1+…-a3+a2-a1+a0<span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;</span>p(1)+p(-1)=2[an+an-2+…+a2+a0]</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;</span>p(1)-p(-1)=1/2[(an-1)+(an-3)+…+a3+a1]</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;</span>[</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>例</span><span
+lang=EN-US>](1+2x+3x</span><span style='font-family:新細明體;mso-hansi-font-family:
+"Times New Roman"'>&sup2;</span><span lang=EN-US>+…+10x<sup>9</sup>)<sup>4</sup></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>式中</span><span lang=EN-US>,</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>求</span><span
+lang=EN-US>1.</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>常數項</span><span lang=EN-US> 2.</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>所有係數和</span><span lang=EN-US> 3.</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>所有奇</span><span lang=EN-US>(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>偶</span><span
+lang=EN-US>)</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>次項係數和。</span> <span lang=EN-US>sol:1.<b
+style='mso-bidi-font-weight:normal'>1</b></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span>2.(1+2+3+4+…+10)<sup>4</sup>=<b
+style='mso-bidi-font-weight:normal'>55<sup>4</sup></b></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp; </span></span></p>
+
+<p class=MsoNormal style='margin-top:0pt;margin-right:5.65pt;margin-bottom:
+0pt;margin-left:18.15pt;margin-bottom:.0001pt;text-indent:-12.5pt;mso-line-break-override:
+restrictions'><span lang=EN-US>[4]</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>多項式的加減</span><span
+lang=EN-US>,</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>乘法</span><span lang=EN-US> (1)<i> f</i></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span lang=EN-US style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>±</span></span><i><span lang=EN-US>g</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）不是零多項式時，</span></p>
+
+<p class=MsoNormal style='margin-top:0pt;margin-right:5.65pt;margin-bottom:
+0pt;margin-left:1.51gd;margin-bottom:.0001pt;text-indent:12.0pt;mso-char-indent-count:
+1.0;mso-char-indent-size:12.0pt;mso-line-break-override:restrictions'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>其次數小於或等於</span><i><span lang=EN-US>f</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）與</span><i><span lang=EN-US>g</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）中的“較大次數”。</span></p>
+
+<p class=MsoNormal style='margin-top:0pt;margin-right:5.65pt;margin-bottom:
+0pt;margin-left:21.0pt;margin-bottom:.0001pt;text-indent:-15.35pt;mso-line-break-override:
+restrictions'><span lang=EN-US><span style="mso-spacerun: yes">&nbsp;
+</span>(2) </span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>設</span><i><span lang=EN-US>f</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）是</span><i><span lang=EN-US>m</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>次多項式，</span><i><span lang=EN-US>g</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）是</span><i><span lang=EN-US>n</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>次多項式（</span><i><span lang=EN-US>m</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><i><span lang=EN-US>n</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>≠</span><span lang=EN-US>0</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>），則</span><span
+lang=EN-US><br>
+deg</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>（</span><i><span lang=EN-US>f</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span lang=EN-US>× <i>g</i></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";letter-spacing:-2.0pt'>）</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><span
+lang=EN-US>deg<i> f</i></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＋</span><span
+lang=EN-US>deg<i> g</i></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><i><span
+lang=EN-US>m</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>n</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><span
+lang=EN-US><br>
+deg</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>（</span><i><span lang=EN-US>g</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";letter-spacing:-2.0pt'>）</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><span
+lang=EN-US>deg<i> g</i></span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>f</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";letter-spacing:-2.0pt'>）</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><i><span lang=EN-US>mn</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>。</span><span lang=EN-US>___ </span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>[</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>例</span><span lang=EN-US>]:f(x)=x</span><span
+style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>&sup2;</span><span
+lang=EN-US>+x+1<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>g(x)=x</span><span
+style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>&sup3;</span><span
+lang=EN-US>+2x-1<span style="mso-spacerun: yes">&nbsp; </span>h(x)=x4+x</span><span
+style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>&sup2;</span><span
+lang=EN-US>+1<span style="mso-spacerun: yes">&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>求</span><span lang=EN-US>.f(x)g(x)+(x+1)h(x)=?</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;</span>[5]</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>多項式的除法</span><span
+lang=EN-US>[</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>長除法</span><span lang=EN-US>,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>分離係數法</span><span lang=EN-US>,</span><b style='mso-bidi-font-weight:
+normal'><u><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>綜合除法</span></u></b><span lang=EN-US>]</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo5;
+tab-stops:list 30.0pt'><![if !supportLists]><span lang=EN-US>(1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>多項式除法原理</span></p>
+
+<p class=MsoNormal><i><span lang=EN-US>f</span></i><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）和</span><i><span
+lang=EN-US>g</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）是兩個實係數多項式且</span><i><span
+lang=EN-US>g</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）≠</span><span
+lang=EN-US>0</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，</span><span lang=EN-US><br>
+</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>則恰有二個多項式</span><i><span lang=EN-US>q</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）和</span><i><span lang=EN-US>r</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>），滿足</span><span lang=EN-US><br>
+<i><span style="mso-spacerun: yes">&nbsp;</span>f</i></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><i><span lang=EN-US>g</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";letter-spacing:-2.0pt'>）</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>‧</span><i><span
+lang=EN-US>q</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＋</span><i><span
+lang=EN-US>r</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>），</span><span
+lang=EN-US><br>
+<span style="mso-spacerun: yes">&nbsp;</span></span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>↓　</span><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>↓</span><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>↓</span><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>↓</span><span lang=EN-US><br>
+</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>被除式　除式　</span> <span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>商式　</span><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>餘式</span><span lang=EN-US><br>
+</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>其中</span><span lang=EN-US>deg <i>r</i></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＜</span><span lang=EN-US>deg <i>g</i></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）或</span><span lang=EN-US>_<i> r</i></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><span lang=EN-US>0[</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>整除</span><span
+lang=EN-US>]</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>。</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo5;
+tab-stops:list 30.0pt'><![if !supportLists]><span lang=EN-US>(2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>綜合除法</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>求</span><span
+lang=EN-US>2x<sup>4</sup>-3x-7</span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>除以</span><span
+lang=EN-US>x+2</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>的商式及餘式</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>sol: </span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>長除法得：商</span><span lang=EN-US>:2x</span><span
+style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>&sup3;</span><span
+lang=EN-US>-4x</span><span style='font-family:新細明體;mso-hansi-font-family:"Times New Roman"'>&sup2;</span><span
+lang=EN-US>+8x-19<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>餘式</span><span lang=EN-US>:31</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>sol 2:</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>令除式</span><span lang=EN-US>x+2=0<span style="mso-spacerun:
+yes">&nbsp; </span>x=-2 ~ </span><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>利用綜合除法</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>sol 3:</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>利用餘式定理</span><span lang=EN-US>(</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>只求餘數</span><span lang=EN-US>)</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>[</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>註</span><span lang=EN-US>]:</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>設</span><span
+lang=EN-US>f(x)</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>除以</span><span lang=EN-US>(x+a/b)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的商</span><span lang=EN-US>q(x)</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>餘式</span><span
+lang=EN-US>r,</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>則</span><span lang=EN-US>f(x)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>除以</span><span lang=EN-US>(ax+b)</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的商式</span><span lang=EN-US>q(x)/a,</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>餘式</span><span lang=EN-US>r(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>不變</span><span
+lang=EN-US>)</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>證明</span><span
+lang=EN-US>:</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>由除法原理</span><span lang=EN-US>f(x)=(x+b/a)q(x)+r=1/a×a(x+b/a)q(x)+r</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><span
+style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>即</span><span lang=EN-US>f(x)=(ax+b)×Q(x)/a+r</span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><!--[if supportFields]><span lang=EN-US><span style='mso-element:
+field-begin'></span><span style="mso-spacerun: yes">&nbsp;</span>INCLUDETEXT
+&quot;D://</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>徐師資料</span><span lang=EN-US>//94</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>編輯習講義</span><span lang=EN-US>(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上</span><span
+lang=EN-US>)//Zyc71/TBKE-1//B1-4//B14-1//B14-1S0N1P2D.DOC&quot;T141201 \*
+MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+lang=EN-US><a name=T141201>1. </a></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>設</span><i><span lang=EN-US>f</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><span lang=EN-US>2<i>x</i><sup>3</sup></span></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>7<i>x</i><sup>3</sup></span></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>5</span></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><i><span lang=EN-US>g</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝－</span><span lang=EN-US>2<i>x</i><sup>2</sup></span></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>4<i>x</i></span></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><span lang=EN-US>3</span></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，則</span><span
+lang=EN-US><br>
+(1) <i>f</i></span></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＋</span><i><span
+lang=EN-US>g</span></i></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><span
+lang=EN-US>?</span></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（以降冪表之）</span><span lang=EN-US><br>
+(2) <i>f</i></span></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）－</span><i><span
+lang=EN-US>g</span></i></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><span
+lang=EN-US>?</span></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（以降冪表之）</span><span lang=EN-US><br>
+(3) <i>f</i></span></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）‧</span><i><span
+lang=EN-US>g</span></i></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><span
+lang=EN-US>?</span></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（以降冪表之）</span><span lang=EN-US><br>
+(4) <i>f</i></span></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）</span></span><span
+style='mso-bookmark:T141201'><span lang=EN-US style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>&cedil;</span></span><i><span lang=EN-US>g</span></i></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）的商式為</span><u><span lang=EN-US>?</span></u></span><span
+style='mso-bookmark:T141201'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，餘式為</span><u><span
+lang=EN-US>?</span></u></span><span style='mso-bookmark:T141201'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>。</span></span></p>
+
+<span style='mso-bookmark:T141201'></span>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><a
+href="141201.doc"><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解答</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><!--[if supportFields]><span lang=EN-US><span style='mso-element:
+field-begin'></span><span style="mso-spacerun: yes">&nbsp;</span>INCLUDETEXT
+&quot;D://</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>徐師資料</span><span lang=EN-US>//94</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>編輯習講義</span><span lang=EN-US>(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上</span><span
+lang=EN-US>)//Zyc71/TBKE-1//B1-4//B14-1//B14-1S0N1P2D.DOC&quot;T141202 \*
+MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+lang=EN-US><a name=T141202>2. </a></span><span style='mso-bookmark:T141202'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>設</span><i><span lang=EN-US>a</span></i></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>、</span><i><span
+lang=EN-US>b</span></i></span><span style='mso-bookmark:T141202'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>、</span><i><span lang=EN-US>c</span></i><span lang=EN-US> </span></span><span
+style='mso-bookmark:T141202'><span lang=EN-US style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>&Icirc;</span></span><span lang=EN-US> <i>Z</i></span></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，且</span><span
+lang=EN-US>3</span></span><span style='mso-bookmark:T141202'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>｜</span><i><span lang=EN-US>a</span></i></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>｜＋</span><span
+lang=EN-US>4</span></span><span style='mso-bookmark:T141202'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>｜</span><i><span lang=EN-US>b</span></i></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>2</span></span><span style='mso-bookmark:T141202'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>｜＋｜</span><i><span lang=EN-US>c</span></i></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>2</span></span><span style='mso-bookmark:T141202'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>｜＝</span><span lang=EN-US>3</span></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，則多項式</span><span
+lang=EN-US><br>
+<i>f</i></span></span><span style='mso-bookmark:T141202'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><i><span
+lang=EN-US>ax</span></i><sup><span lang=EN-US>4</span></sup></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>bx</span></i><sup><span lang=EN-US>3</span></sup></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>cx</span></i><sup><span lang=EN-US>2</span></sup></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>3<i>x</i></span></span><span style='mso-bookmark:T141202'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><span lang=EN-US>1</span></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的次數可能為</span><span
+lang=EN-US>?<br>
+(A)</span></span><span style='mso-bookmark:T141202'><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>零次　</span><span
+lang=EN-US>(B)</span></span><span style='mso-bookmark:T141202'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>一次　</span><span lang=EN-US>(C)</span></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>二次　</span><span
+lang=EN-US>(D)</span></span><span style='mso-bookmark:T141202'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>三次　</span><span lang=EN-US>(E)</span></span><span
+style='mso-bookmark:T141202'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>四次。</span><i><span
+lang=EN-US><o:p></o:p></span></i></span></p>
+
+<span style='mso-bookmark:T141202'></span>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><a
+href="141202.doc"><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解答</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><!--[if supportFields]><span lang=EN-US><span style='mso-element:
+field-begin'></span><span style="mso-spacerun: yes">&nbsp;</span>INCLUDETEXT
+&quot;D://</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>徐師資料</span><span lang=EN-US>//94</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>編輯習講義</span><span lang=EN-US>(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上</span><span
+lang=EN-US>)//Zyc71/TBKE-1//B1-4//B14-1//B14-1S0N1P2D.DOC&quot;T141203 \*
+MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+lang=EN-US><a name=T141203>3. </a></span><span style='mso-bookmark:T141203'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>已知</span><i><span lang=EN-US>f</span></i></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141203'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝（</span><i><span lang=EN-US>x</span></i><sup><span
+lang=EN-US>5</span></sup></span><span style='mso-bookmark:T141203'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US>2<i>x</i><sup>3</sup></span></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141203'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><span lang=EN-US>1</span></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";letter-spacing:-2.0pt'>）</span><sup><span
+lang=EN-US>20</span></sup></span><span style='mso-bookmark:T141203'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><i><span lang=EN-US>a</span></i><sub><span
+lang=EN-US>0</span></sub></span><span style='mso-bookmark:T141203'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><i><span lang=EN-US>a</span></i><sub><span
+lang=EN-US>1</span></sub><i><span lang=EN-US>x</span></i><sup><span lang=EN-US>2</span></sup></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋……＋</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>100</span></sub><i><span
+lang=EN-US>x</span></i><sup><span lang=EN-US>100</span></sup></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，則：</span></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;mso-line-break-override:restrictions'><span
+style='mso-bookmark:T141203'><span lang=EN-US>(1) <i>a</i><sub>0</sub></span></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>2</span></sub></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>4</span></sub></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋……＋</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>100</span></sub></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US>?</span></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;mso-line-break-override:restrictions'><span
+style='mso-bookmark:T141203'><span lang=EN-US>(2) <i>a</i><sub>1</sub></span></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>3</span></sub></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>5</span></sub></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋……＋</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>99</span></sub></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US>?<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>(3) </span></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>常數項</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>0</span></sub></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US>?</span></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;mso-line-break-override:restrictions'><span
+style='mso-bookmark:T141203'><span lang=EN-US>(4) </span></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>所有係數和</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>0</span></sub></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>1</span></sub></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋……＋</span><i><span
+lang=EN-US>a</span></i><sub><span lang=EN-US>100</span></sub></span><span
+style='mso-bookmark:T141203'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US>?</span></span></p>
+
+<span style='mso-bookmark:T141203'></span>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><a
+href="141203.doc"><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解答</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><!--[if supportFields]><span lang=EN-US><span style='mso-element:
+field-begin'></span><span style="mso-spacerun: yes">&nbsp;</span>INCLUDETEXT
+&quot;D://</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>徐師資料</span><span lang=EN-US>//94</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>編輯習講義</span><span lang=EN-US>(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上</span><span
+lang=EN-US>)//Zyc71/TBKE-1//B1-4//B14-1//B14-1S0N1P2D.DOC&quot;T141204 \*
+MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+lang=EN-US><a name=T141204>4. </a></span><span style='mso-bookmark:T141204'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>多項式</span><span lang=EN-US>2<i>x</i><sup>3</sup></span></span><span
+style='mso-bookmark:T141204'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>3<i>x</i><sup>2</sup></span></span><span style='mso-bookmark:T141204'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><i><span lang=EN-US>ax</span></i></span><span
+style='mso-bookmark:T141204'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>5</span></span><span style='mso-bookmark:T141204'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>除以</span><i><span lang=EN-US>x</span></i><sup><span
+lang=EN-US>2</span></sup></span><span style='mso-bookmark:T141204'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><i><span lang=EN-US>bx</span></i></span><span
+style='mso-bookmark:T141204'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>3</span></span><span style='mso-bookmark:T141204'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>所得的商式為</span><span lang=EN-US>2<i>x</i></span></span><span
+style='mso-bookmark:T141204'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>1</span></span><span style='mso-bookmark:T141204'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，餘式為</span><span lang=EN-US>12<i>x</i></span></span><span
+style='mso-bookmark:T141204'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>2</span></span><span style='mso-bookmark:T141204'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，則數對（</span><i><span lang=EN-US>a</span></i><span
+lang=EN-US> , <i>b</i></span></span><span style='mso-bookmark:T141204'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><span lang=EN-US>?</span></span></p>
+
+<span style='mso-bookmark:T141204'></span>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><a
+href="141204.doc"><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解答</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><!--[if supportFields]><span lang=EN-US><span style='mso-element:
+field-begin'></span><span style="mso-spacerun: yes">&nbsp;</span>INCLUDETEXT
+&quot;D://</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>徐師資料</span><span lang=EN-US>//94</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>編輯習講義</span><span lang=EN-US>(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上</span><span
+lang=EN-US>)//Zyc71/TBKE-1//B1-4//B14-1//B14-1S0N1P2D.DOC&quot;T141205 \*
+MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+lang=EN-US><a name=T141205>5.<span style='letter-spacing:3.0pt'> </span><i>f</i></a></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><i><span lang=EN-US>a</span></i></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US>1</span></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";letter-spacing:-2.0pt'>）</span></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US>2</span></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＋</span><i><span
+lang=EN-US>b</span></i></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>1</span></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";letter-spacing:-2.0pt'>）</span></span><span style='mso-bookmark:
+T141205'><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>2</span></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＋</span><i><span lang=EN-US>c</span></i></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US>1</span></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";letter-spacing:-2.0pt'>）</span></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><span lang=EN-US>1</span></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）且</span><i><span
+lang=EN-US>f</span></i></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（－</span><span lang=EN-US>50</span></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><i><span
+lang=EN-US>f</span></i></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US>1.38</span></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><i><span
+lang=EN-US>f</span></i></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:23.25pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="./B1-3-01.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=31 height=25
+src="./B1-3-01.files/image006.gif" v:shapes="_x0000_i1035"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1248789188">
+ </o:OLEObject>
+</xml><![endif]--></span></span><span style='mso-bookmark:T141205'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><span lang=EN-US>12</span></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，則數對（</span><i><span
+lang=EN-US>a</span></i><span lang=EN-US> , <i>b</i> , <i>c</i></span></span><span
+style='mso-bookmark:T141205'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><span
+lang=EN-US>?</span></span></p>
+
+<span style='mso-bookmark:T141205'></span>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><a
+href="141205.doc"><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解答</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><!--[if supportFields]><span lang=EN-US><span style='mso-element:
+field-begin'></span><span style="mso-spacerun: yes">&nbsp;</span>INCLUDETEXT
+&quot;D://</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>徐師資料</span><span lang=EN-US>//94</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>編輯習講義</span><span lang=EN-US>(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上</span><span
+lang=EN-US>)//Zyc71/TBKE-1//B1-4//B14-1//B14-1S0N1P2D.DOC&quot;T141206 \*
+MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+lang=EN-US><a name=T141206>6. </a></span><span style='mso-bookmark:T141206'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>若</span><span lang=EN-US>2<i>x</i><sup>4</sup></span></span><span
+style='mso-bookmark:T141206'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><i><span
+lang=EN-US>x</span></i><sup><span lang=EN-US>3</span></sup></span><span
+style='mso-bookmark:T141206'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>ax</span></i><sup><span lang=EN-US>2</span></sup></span><span
+style='mso-bookmark:T141206'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141206'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><i><span lang=EN-US>b</span></i></span><span
+style='mso-bookmark:T141206'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>能被</span><span
+lang=EN-US>2<i>x</i><sup>2</sup></span></span><span style='mso-bookmark:T141206'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141206'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>1</span></span><span style='mso-bookmark:T141206'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>整除，則</span><i><span lang=EN-US>a</span></i></span><span
+style='mso-bookmark:T141206'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US>?</span></span><span style='mso-bookmark:T141206'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><i><span lang=EN-US>b</span></i></span><span
+style='mso-bookmark:T141206'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US>?</span></span><span style='mso-bookmark:T141206'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>；商式為</span><span lang=EN-US>?</span></span></p>
+
+<span style='mso-bookmark:T141206'></span>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><a
+href="141206.doc"><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解答</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><!--[if supportFields]><span lang=EN-US><span style='mso-element:
+field-begin'></span><span style="mso-spacerun: yes">&nbsp;</span>INCLUDETEXT
+&quot;D://</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>徐師資料</span><span lang=EN-US>//94</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>編輯習講義</span><span lang=EN-US>(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上</span><span
+lang=EN-US>)//Zyc71/TBKE-1//B1-4//B14-1//B14-1S0N1P2D.DOC&quot;T141207 \*
+MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+lang=EN-US><a name=T141207>7. </a></span><span style='mso-bookmark:T141207'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>求</span><span lang=EN-US>4</span></span><span
+style='mso-bookmark:T141207'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><span
+lang=EN-US><sub><!--[if gte vml 1]><v:shape id="_x0000_i1036" type="#_x0000_t75"
+ style='width:41.25pt;height:33.75pt' o:ole="">
+ <v:imagedata src="./B1-3-01.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=55 height=45
+src="./B1-3-01.files/image008.gif" v:shapes="_x0000_i1036"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1248789189">
+ </o:OLEObject>
+</xml><![endif]--></span></span><span style='mso-bookmark:T141207'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";letter-spacing:-2.0pt'>）</span><sup><span lang=EN-US>3</span></sup></span><span
+style='mso-bookmark:T141207'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>12</span></span><span style='mso-bookmark:T141207'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:41.25pt;height:33.75pt'
+ o:ole="">
+ <v:imagedata src="./B1-3-01.files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=55 height=45
+src="./B1-3-01.files/image010.gif" v:shapes="_x0000_i1037"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1248789191">
+ </o:OLEObject>
+</xml><![endif]--></span></span><span style='mso-bookmark:T141207'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";letter-spacing:-2.0pt'>）</span><sup><span lang=EN-US>2</span></sup></span><span
+style='mso-bookmark:T141207'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>11</span></span><span style='mso-bookmark:T141207'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:41.25pt;height:33.75pt'
+ o:ole="">
+ <v:imagedata src="./B1-3-01.files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=55 height=45
+src="./B1-3-01.files/image011.gif" v:shapes="_x0000_i1038"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1248789192">
+ </o:OLEObject>
+</xml><![endif]--></span></span><span style='mso-bookmark:T141207'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";letter-spacing:-2.0pt'>）</span></span><span style='mso-bookmark:
+T141207'><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>＋</span><span lang=EN-US>7</span></span><span
+style='mso-bookmark:T141207'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US>?</span></span></p>
+
+<span style='mso-bookmark:T141207'></span>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><a
+href="141207.doc"><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解答</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><!--[if supportFields]><span lang=EN-US><span style='mso-element:
+field-begin'></span><span style="mso-spacerun: yes">&nbsp;</span>INCLUDETEXT
+&quot;D://</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>徐師資料</span><span lang=EN-US>//94</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>編輯習講義</span><span lang=EN-US>(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上</span><span
+lang=EN-US>)//Zyc71/TBKE-1//B1-4//B14-1//B14-1S0N1P2D.DOC&quot;T141208 \*
+MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+lang=EN-US><a name=T141208>8. </a></span><span style='mso-bookmark:T141208'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>設</span><i><span lang=EN-US>f</span></i></span><span
+style='mso-bookmark:T141208'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141208'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><i><span lang=EN-US>x</span></i><sup><span
+lang=EN-US>4</span></sup></span><span style='mso-bookmark:T141208'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US>3<i>x</i><sup>3</sup></span></span><span
+style='mso-bookmark:T141208'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>x</span></i><sup><span lang=EN-US>2</span></sup></span><span
+style='mso-bookmark:T141208'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>4<i>x</i></span></span><span style='mso-bookmark:T141208'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US>8<br>
+(1) </span></span><span style='mso-bookmark:T141208'><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>將</span><i><span
+lang=EN-US>f</span></i></span><span style='mso-bookmark:T141208'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141208'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）表成</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141208'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>－</span><span lang=EN-US>2</span></span><span
+style='mso-bookmark:T141208'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的多項式，即</span><i><span
+lang=EN-US>f</span></i></span><span style='mso-bookmark:T141208'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><i><span lang=EN-US>x</span></i></span><span
+style='mso-bookmark:T141208'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）＝</span><span
+lang=EN-US><sub><!--[if gte vml 1]><v:shape id="_x0000_i1039" type="#_x0000_t75"
+ style='width:69pt;height:38.25pt' o:ole="">
+ <v:imagedata src="./B1-3-01.files/image012.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=92 height=51
+src="./B1-3-01.files/image013.gif" v:shapes="_x0000_i1039"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1248789193">
+ </o:OLEObject>
+</xml><![endif]--></span></span><span style='mso-bookmark:T141208'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>。</span><span lang=EN-US><br>
+(2) </span></span><span style='mso-bookmark:T141208'><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>求</span><i><span
+lang=EN-US>f</span></i></span><span style='mso-bookmark:T141208'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US>1.999</span></span><span
+style='mso-bookmark:T141208'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）的近似值（取到小數點以下第</span><span
+lang=EN-US>3</span></span><span style='mso-bookmark:T141208'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>位）。</span></span></p>
+
+<span style='mso-bookmark:T141208'></span>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><a
+href="141208.doc"><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解答</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;tab-stops:
+72.1pt;mso-line-break-override:restrictions'><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-begin'></span><span
+style="mso-spacerun: yes">&nbsp;</span>INCLUDETEXT &quot;D://</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>徐師資料</span><span lang=EN-US>//94</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>編輯習講義</span><span lang=EN-US>(</span><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上</span><span
+lang=EN-US>)//Zyc71/TBKE-1//B1-4//B14-1//B14-1S0N1P2D.DOC&quot;T141209 \*
+MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+lang=EN-US><a name=T141209>9. </a></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>若</span><i><span lang=EN-US>f</span></i></span><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><span lang=EN-US>8<i>x</i><sup>3</sup></span></span><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>28<i>x</i><sup>2</sup></span></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><span lang=EN-US>56<i>x</i><sup>2</sup></span></span><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>45<br>
+</span></span><span style='mso-bookmark:T141209'><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>　</span><span
+lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><i><span
+lang=EN-US>a</span></i></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US>2<i>x</i></span></span><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>3</span></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";letter-spacing:-2.0pt'>）</span><sup><span lang=EN-US>3</span></sup></span><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>b</span></i></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US>2<i>x</i></span></span><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>3</span></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";letter-spacing:-2.0pt'>）</span><sup><span lang=EN-US>2</span></sup></span><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><i><span
+lang=EN-US>c</span></i></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US>2<i>x</i></span></span><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>－</span><span
+lang=EN-US>3</span></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＋</span><i><span lang=EN-US>d<br>
+</span></i><span lang=EN-US>(1) </span></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>求數對（</span><i><span lang=EN-US>a</span></i><span lang=EN-US>
+, <i>b</i> , <i>c</i> , <i>d</i></span></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><span lang=EN-US>?<br>
+(2) </span></span><span style='mso-bookmark:T141209'><span style='font-family:
+新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>求</span><i><span
+lang=EN-US>f</span></i></span><span style='mso-bookmark:T141209'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US>1.502</span></span><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）的近似值到小數點後第三位（四捨五入）</span></span></p>
+
+<p class=MsoNormal style='margin-left:1.91gd;text-indent:24.0pt;mso-char-indent-count:
+2.0;mso-char-indent-size:12.0pt;tab-stops:72.1pt;mso-line-break-override:restrictions'><span
+style='mso-bookmark:T141209'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>為</span><span
+lang=EN-US>?</span></span></p>
+
+<span style='mso-bookmark:T141209'></span>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><a
+href="141209.doc"><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解答</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-begin'></span><span style="mso-spacerun:
+yes">&nbsp;</span>INCLUDETEXT &quot;D://</span><span style='font-family:新細明體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>徐師資料</span><span
+lang=EN-US>//94</span><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>編輯習講義</span><span lang=EN-US>(</span><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>上</span><span lang=EN-US>)//Zyc71/TBKE-1//B1-4//B14-1//B14-1S0N1P2D.DOC&quot;T141210
+\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+lang=EN-US><a name=T141210>10. </a></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>已知有二多項式</span><i><span lang=EN-US>P</span></i></span><span
+style='mso-bookmark:T141210'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><span lang=EN-US>1</span></span><span
+style='mso-bookmark:T141210'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>2<i>x</i></span></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><span lang=EN-US>3<i>x</i><sup>2</sup></span></span><span
+style='mso-bookmark:T141210'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋……＋</span><span
+lang=EN-US>11<i>x</i><sup>10</sup></span></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" style='width:75.75pt;height:38.25pt'
+ o:ole="">
+ <v:imagedata src="./B1-3-01.files/image014.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=101 height=51
+src="./B1-3-01.files/image015.gif" v:shapes="_x0000_i1040"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1248789194">
+ </o:OLEObject>
+</xml><![endif]--></span></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><i><span lang=EN-US>Q</span></i></span><span
+style='mso-bookmark:T141210'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）＝</span><span lang=EN-US>1</span></span><span
+style='mso-bookmark:T141210'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋</span><span
+lang=EN-US>3<i>x</i><sup>2</sup></span></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＋</span><span lang=EN-US>5<i>x</i><sup>4</sup></span></span><span
+style='mso-bookmark:T141210'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＋……＋</span><span
+lang=EN-US>11<i>x</i><sup>10</sup></span></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>＝</span><span lang=EN-US><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" style='width:87pt;height:38.25pt' o:ole="">
+ <v:imagedata src="./B1-3-01.files/image016.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=116 height=51
+src="./B1-3-01.files/image017.gif" v:shapes="_x0000_i1041"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1248789195">
+ </o:OLEObject>
+</xml><![endif]--></span></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，則</span><i><span lang=EN-US>P</span></i></span><span
+style='mso-bookmark:T141210'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）和</span><i><span lang=EN-US>Q</span></i></span><span
+style='mso-bookmark:T141210'><span style='font-family:新細明體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><i><span
+lang=EN-US>x</span></i></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）的乘積中，</span><i><span lang=EN-US>x</span></i><sup><span
+lang=EN-US>9</span></sup></span><span style='mso-bookmark:T141210'><span
+style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的係數為</span><span lang=EN-US>?<br style='mso-special-character:
+line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></span></span></p>
+
+<span style='mso-bookmark:T141210'></span>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><a
+href="141210.doc"><span style='font-family:新細明體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解答</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:right dotted 408.25pt;
+mso-line-break-override:restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:right dotted 408.25pt;
+mso-line-break-override:restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:right dotted 408.25pt;
+mso-line-break-override:restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right dotted 408.25pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:新細明體;mso-font-kerning:1.0pt;mso-ansi-language:EN-US;
+mso-fareast-language:ZH-TW;mso-bidi-language:AR-SA'><br clear=all
+style='mso-special-character:line-break;page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-left:62.3pt;mso-line-break-override:restrictions'><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:22.95pt;text-indent:-17.3pt;mso-line-break-override:
+restrictions'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

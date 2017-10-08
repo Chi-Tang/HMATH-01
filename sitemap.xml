@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://61.222.248.199/Hmath/index.htm</loc>
+  <lastmod>2012-11-24T14:55:25+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://61.222.248.199/Hmath/indexup.htm</loc>
+  <lastmod>2011-06-27T10:14:40+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://61.222.248.199/Hmath/indexlt.asp</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://61.222.248.199/Hmath/indexrt.htm</loc>
+  <lastmod>2011-06-26T03:57:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://61.222.248.199/Hmath/Rm-ch11/gform.htm</loc>
+  <lastmod>2007-08-26T14:47:32+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>
